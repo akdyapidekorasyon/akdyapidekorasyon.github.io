@@ -87,10 +87,10 @@
         .intro-box h2 { color: #d4af37; margin-bottom: 15px; }
         .intro-box p { color: #cbd5e1; }
 
-        .gallery-title { text-align: center; color: #ffffff; font-size: 2rem; margin-bottom: 25px; font-weight: 600; position: relative; }
-        .gallery-title::after { content: ''; display: block; width: 60px; height: 4px; background: #d4af37; margin: 10px auto 0; border-radius: 2px; }
+        .bolum-basligi { text-align: center; color: #ffffff; font-size: 2rem; margin: 40px 0 25px 0; font-weight: 600; position: relative; }
+        .bolum-basligi::after { content: ''; display: block; width: 60px; height: 4px; background: #d4af37; margin: 10px auto 0; border-radius: 2px; }
         
-        /* Grid Düzeni */
+        /* Orijinal Sağlam Grid Düzeni */
         .media-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px; }
         
         .media-item { 
@@ -111,8 +111,18 @@
         
         .media-item img, .media-item video { width: 100%; height: 250px; object-fit: cover; background: #000; border-bottom: 3px solid #d4af37; }
         
-        /* Alt yazılar buradaki boş kutuya akıllı script tarafından otomatik yazılacak */
-        .media-desc { padding: 15px; text-align: center; font-weight: 600; color: #ffffff; background: #1a1d24; font-size: 0.95rem; }
+        /* PARLAK BEYAZ VE NET OKUNUR ALT YAZI STİLİ YAPILDI */
+        .media-desc { 
+            padding: 15px; 
+            text-align: center; 
+            font-weight: 700; 
+            color: #ffffff !important; /* Net Parlak Beyaz */
+            background: #1a1d24; 
+            font-size: 1rem; 
+            letter-spacing: 0.5px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+        }
         
         /* Buton Grubu */
         .btn-container { display: flex; flex-direction: column; align-items: center; gap: 15px; margin: 40px auto; }
@@ -147,31 +157,26 @@
             <p>Kahramanmaraş ve çevresinde anahtar teslim tadilat, alçıpan, asma tavan işleri, ince boya, özel imalat modern TV üniteleri, ahşap ve polyester çıta çözümlerimizle evlerinize şıklık katıyoruz. Aşağıdan işlerimizi inceleyebilirsiniz.</p>
         </div>
 
-        <h3 class="gallery-title">İşçilik Galerimiz</h3>
+        <!-- ================= FOTOĞRAFLAR BÖLÜMÜ (GERİ GETİRİLDİ) ================= -->
+        <h2 class="bolum-basligi">📸 Fotoğraf Galerimiz</h2>
         
         <div class="media-gallery">
-            <!-- GÖRSELLER (Alt yazıları akıllı script dosya adına göre otomatik dolduracaktır) -->
-            <div class="media-item"><img src="dosya1.jpg" onerror="this.src='dosya1.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-            <div class="media-item"><img src="dosya2.jpg" onerror="this.src='dosya2.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-            <div class="media-item"><img src="dosya3.jpg" onerror="this.src='dosya3.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-            <div class="media-item"><img src="dosya5.jpg" onerror="this.src='dosya5.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-            <div class="media-item"><img src="dosya6.jpg" onerror="this.src='dosya6.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-            <div class="media-item"><img src="dosya8.jpg" onerror="this.src='dosya8.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-            <div class="media-item"><img src="dosya9.jpg" onerror="this.src='dosya9.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-            <div class="media-item"><img src="dosya10.jpg" onerror="this.src='dosya10.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-            <div class="media-item"><img src="dosya11.jpg" onerror="this.src='dosya11.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-            <div class="media-item"><img src="dosya16.jpg" onerror="this.src='dosya16.JPG'" alt="Akd Yapı"><div class="media-desc"></div></div>
-
-            <!-- VİDEOLAR -->
-            <div class="media-item"><video src="dosya12.mp4" controls preload="metadata"></video><div class="media-desc"></div></div>
-            <div class="media-item"><video src="dosya13.mp4" controls preload="metadata"></video><div class="media-desc"></div></div>
-            <div class="media-item"><video src="dosya15.mp4" controls preload="metadata"></video><div class="media-desc"></div></div>
-            <div class="media-item"><video src="dosya17.mp4" controls preload="metadata"></video><div class="media-desc"></div></div>
-            <div class="media-item"><video src="dosya18.mp4" controls preload="metadata"></video><div class="media-desc"></div></div>
-            <div class="media-item"><video src="dosya19.mp4" controls preload="metadata"></video><div class="media-desc"></div></div>
-            <div class="media-item"><video src="dosya20.mp4" controls preload="metadata"></video><div class="media-desc"></div></div>
+            <div class="media-item"><img src="dosya1.jpg" onerror="this.src='dosya1.JPG'" alt="Akd Yapı"><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
+            <div class="media-item"><img src="dosya2.jpg" onerror="this.src='dosya2.JPG'" alt="Akd Yapı"><div class="media-desc">Koridor Çıta Yapımı Tamamlanmıştır</div></div>
+            <div class="media-item"><img src="dosya3.jpg" onerror="this.src='dosya3.JPG'" alt="Akd Yapı"><div class="media-desc">Asma Tavan Yapı Dekorasyon</div></div>
+            <div class="media-item"><img src="dosya5.jpg" onerror="this.src='dosya5.JPG'" alt="Akd Yapı"><div class="media-desc">Premium Duvar Paneli Çözümümüz</div></div>
+            <div class="media-item"><img src="dosya6.jpg" onerror="this.src='dosya6.JPG'" alt="Akd Yapı"><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
+            <div class="media-item"><img src="dosya8.jpg" onerror="this.src='dosya8.JPG'" alt="Akd Yapı"><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
+            <div class="media-item"><img src="dosya9.jpg" onerror="this.src='dosya9.JPG'" alt="Akd Yapı"><div class="media-desc">Akd Yapı | Premium Dekorasyon İşçiliği</div></div>
+            <div class="media-item"><img src="dosya10.jpg" onerror="this.src='dosya10.JPG'" alt="Akd Yapı"><div class="media-desc">Modern Alçıpan TV Ünitesi Uygulaması</div></div>
+            <div class="media-item"><img src="dosya11.jpg" onerror="this.src='dosya11.JPG'" alt="Akd Yapı"><div class="media-desc">Koridor Çıta Yapımı Tamamlanmıştır</div></div>
+            <div class="media-item"><img src="dosya16.jpg" onerror="this.src='dosya16.JPG'" alt="Akd Yapı"><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
         </div>
 
-        <!-- İletişim Butonları -->
-        <div class="btn-container">
-            <a href="https://wa.me" class="action-btn whatsapp-btn" target="_blank">
+        <!-- ================= VİDEOLAR BÖLÜMÜ ================= -->
+        <h2 class="bolum-basligi">📹 Uygulama Videolarımız</h2>
+
+        <div class="media-gallery">
+            <div class="media-item"><video src="dosya12.mp4" controls preload="metadata"></video><div class="media-desc">Modern Alçıpan TV Ünitesi Uygulaması</div></div>
+            <div class="media-item"><video src="dosya13.mp4" controls preload="metadata"></video><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
+            <div class="media-item"><video src="dosya15.mp4" controls preload="metadata"></video><div class="media-desc">Asma Tavan Yapı Dekorasyon</div></div>
