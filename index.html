@@ -3,171 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akd Yapı Dekorasyon | Kahramanmaraş Alçıpan, Asma Tavan & Polyester Çıta</title>
-    <!-- Üst Seviye Premium Yazı Tipi -->
+    <title>Akd Yapı Dekorasyon | Kahramanmaraş Alçıpan, TV Ünitesi & Çıta Tasarımı</title>
+    <!-- Premium Yazı Tipi -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-        /* 3D Siyah & Gold Ağır Arayüz Tasarımı */
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+        /* Akd Yapı Afiş Konseptli Ultra Premium CSS */
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+        }
         
         body { 
-            background-color: #0b0c10; /* Lüks Koyu Siyah */
-            /* 3 Boyutlu Derinlik Hissi Veren Gold ve Siyah Baklava Dilimi Çıta Geometrisi */
+            background-color: #0a0b0d; /* Derin Premium Siyah */
+            /* 3 Boyutlu Derinlik Veren Şık Baklava Çıta ve Işık Efekti */
             background-image: 
-                linear-gradient(135deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%), 
-                linear-gradient(225deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%), 
-                linear-gradient(45deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%), 
-                linear-gradient(315deg, rgba(212, 175, 55, 0.03) 25%, #0b0c10 25%);
-            background-position: 40px 0, 40px 0, 0 0, 0 0;
-            background-size: 80px 80px;
-            color: #f1f5f9; 
+                radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                linear-gradient(135deg, rgba(212, 175, 55, 0.02) 25%, transparent 25%), 
+                linear-gradient(225deg, rgba(212, 175, 55, 0.02) 25%, transparent 25%), 
+                linear-gradient(45deg, rgba(212, 175, 55, 0.02) 25%, transparent 25%), 
+                linear-gradient(315deg, rgba(212, 175, 55, 0.02) 25%, #0a0b0d 25%);
+            background-position: 0 0, 40px 0, 40px 0, 0 0, 0 0;
+            background-size: 100% 100%, 80px 80px, 80px 80px, 80px 80px, 80px 80px;
+            color: #f8fafc; 
             line-height: 1.6; 
         }
         
-        /* Lüks Üst Bilgi Barı */
+        /* Afiş Esintili Gold Şeritli Üst Bar */
         .ust-bilgi-bari {
-            background: rgba(17, 19, 24, 0.95);
-            color: #94a3b8;
-            padding: 12px 20px;
-            font-size: 0.9rem;
+            background: rgba(13, 14, 18, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: #a1a1aa;
+            padding: 14px 20px;
+            font-size: 0.95rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             gap: 10px;
-            border-bottom: 2px solid #d4af37;
+            border-bottom: 2px solid #d4af37; /* Keskin Gold Çizgi */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .ust-bilgi-bari a {
             color: #d4af37;
             text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Başlık Alanı */
-        header { 
-            background: linear-gradient(180deg, rgba(17, 19, 24, 0.9) 0%, rgba(11, 12, 16, 0.6) 100%);
-            color: white; 
-            text-align: center; 
-            padding: 60px 20px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            font-weight: 700;
+            transition: all 0.3s ease;
         }
         
+        .ust-bilgi-bari a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+        }
+
+        /* Afiş Tarzı Muazzam Header Bölümü */
+        header { 
+            background: linear-gradient(180deg, rgba(13, 14, 18, 0.9) 0%, rgba(10, 11, 13, 0.4) 100%);
+            text-align: center; 
+            padding: 70px 20px; 
+            position: relative;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        /* Logodaki Gibi Asil Altın Varak Yazı Tipi */
         header h1 { 
-            font-size: 2.8rem; 
-            margin-bottom: 10px; 
+            font-size: 3.4rem; 
+            margin-bottom: 8px; 
             font-weight: 800; 
             text-transform: uppercase; 
-            letter-spacing: 1px; 
-            background: linear-gradient(135deg, #ffffff 20%, #d4af37 60%, #fef08a 100%);
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #ffffff 10%, #d4af37 60%, #fef08a 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 4px 15px rgba(212, 175, 55, 0.4));
         }
         
-        header p { font-size: 1.2rem; color: #94a3b8; }
-        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
-        
-        /* Şeffaf ve Şık Açıklama Kutusu */
-        .intro-box { 
-            background: #161920; 
-            padding: 30px; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.4); 
-            text-align: center; 
-            margin-bottom: 40px; 
-            border: 1px solid rgba(212, 175, 55, 0.15);
+        header p { 
+            font-size: 1.25rem; 
+            font-weight: 400;
+            color: #a1a1aa;
+            letter-spacing: 0.5px;
         }
-        .intro-box h2 { color: #d4af37; margin-bottom: 15px; }
-        .intro-box p { color: #cbd5e1; }
+        
+        .container { 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+        }
+        
+        /* Afiş Özellik Kutuları (Modern Tasarım, 1. Sınıf Malzeme vb.) */
+        .ozellikler-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
 
-        .gallery-title { text-align: center; color: #ffffff; font-size: 2rem; margin-bottom: 25px; font-weight: 600; position: relative; }
-        .gallery-title::after { content: ''; display: block; width: 60px; height: 4px; background: #d4af37; margin: 10px auto 0; border-radius: 2px; }
+        .ozellik-karti {
+            background: rgba(20, 22, 28, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .ozellik-karti:hover {
+            border-color: #d4af37;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.1);
+        }
+
+        .ozellik-karti h4 {
+            color: #d4af37;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .ozellik-karti p {
+            color: #a1a1aa;
+            font-size: 0.9rem;
+        }
+
+        /* Başlık Çizgisi */
+        .bolum-basligi { 
+            text-align: center; 
+            color: #ffffff; 
+            font-size: 2rem; 
+            margin: 50px 0 30px 0; 
+            font-weight: 700; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
         
-        /* Hatasız Grid Sistemi */
-        .media-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .bolum-basligi::after { 
+            content: ''; 
+            display: block; 
+            width: 70px; 
+            height: 3px; 
+            background: #d4af37; 
+            margin: 10px auto 0; 
+            border-radius: 2px; 
+        }
+        
+        /* Lüks Çerçeveli Grid Kart Sistemi */
+        .media-gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+            gap: 25px; 
+            margin-bottom: 40px; 
+        }
         
         .media-item { 
-            background: #161920; 
-            border-radius: 12px; 
+            background: #13151a; 
+            border-radius: 16px; 
             overflow: hidden; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
-            transition: all 0.3s ease; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6); 
             display: flex; 
             flex-direction: column; 
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
+        
         .media-item:hover { 
-            transform: translateY(-5px); 
+            transform: translateY(-8px);
             border-color: #d4af37;
-            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.15);
         }
         
-        .media-item img, .media-item video { width: 100%; height: 250px; object-fit: cover; background: #000; border-bottom: 3px solid #d4af37; }
-        .media-desc { padding: 15px; text-align: center; font-weight: 600; color: #ffffff; background: #1a1d24; font-size: 0.95rem; }
+        .media-item img, .media-item video { 
+            width: 100%; 
+            height: 260px; 
+            object-fit: cover; 
+            background: #000; 
+            border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+        }
         
-        /* Buton Grubu */
-        .btn-container { display: flex; flex-direction: column; align-items: center; gap: 15px; margin: 40px auto; }
-        .action-btn { display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; padding: 18px 35px; border-radius: 16px; font-size: 1.2rem; font-weight: bold; width: 100%; max-width: 400px; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s ease; text-align: center; }
-        .action-btn:hover { transform: scale(1.05); }
-        .action-btn svg { width: 26px; height: 26px; margin-right: 12px; fill: white; }
+        /* Net ve Doğru Alt Yazı Alanı */
+        .media-desc { 
+            padding: 18px; 
+            text-align: center; 
+            font-weight: 700; 
+            color: #ffffff; 
+            background: #171921; 
+            font-size: 1rem; 
+            letter-spacing: 0.3px;
+            border-top: 1px solid rgba(255,255,255,0.02);
+        }
         
-        .whatsapp-btn { background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); }
-        .instagram-btn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        /* Afiş Tarzı Büyük ve Canlı Aksiyon Butonları */
+        .btn-container { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 15px; 
+            margin: 50px auto; 
+        }
         
-        footer { background: #090a0f; color: #64748b; text-align: center; padding: 25px 20px; font-size: 0.95rem; margin-top: 50px; border-top: 2px solid #d4af37; }
+        .action-btn { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: white; 
+            text-decoration: none; 
+            padding: 18px 35px; 
+            border-radius: 50px; 
+            font-size: 1.2rem; 
+            font-weight: bold; 
+            width: 100%; 
+            max-width: 450px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4); 
+            transition: all 0.3s ease; 
+            text-align: center; 
+        }
+
+        .action-btn:hover { 
+            transform: scale(1.03) translateY(-2px); 
+        }
+        
+        .action-btn svg { 
+            width: 26px; 
+            height: 26px; 
+            margin-right: 12px; 
+            fill: white; 
+        }
+        
+        .whatsapp-btn { 
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); 
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.2);
+        }
+        .whatsapp-btn:hover {
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+        }
+        
+        .instagram-btn { 
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+            box-shadow: 0 10px 25px rgba(220, 39, 67, 0.2);
+        }
+        .instagram-btn:hover {
+            box-shadow: 0 15px 30px rgba(220, 39, 67, 0.4);
+        }
+        
+        /* Ağır Koyu Tasarım Footer */
+        footer { 
+            background: #06070a; 
+            color: #71717a; 
+            text-align: center; 
+            padding: 35px 20px; 
+            font-size: 0.95rem; 
+            margin-top: 60px; 
+            border-top: 2px solid #d4af37; 
+        }
         footer p { margin-bottom: 5px; }
-        footer p strong { color: #cbd5e1; }
-        @media (max-width: 768px) { header h1 { font-size: 1.8rem; } .media-gallery { grid-template-columns: 1fr; } .ust-bilgi-bari { flex-direction: column; text-align: center; } }
+        footer p strong { color: #e4e4e7; }
+
+        /* Mobil Ekran Koruma Kriterleri */
+        @media (max-width: 768px) { 
+            header h1 { font-size: 2.2rem; } 
+            .media-gallery { grid-template-columns: 1fr; } 
+            .ust-bilgi-bari { flex-direction: column; text-align: center; }
+            .ozellikler-container { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- Üst İletişim Bilgileri -->
+    <!-- Üst İletişim Bilgileri (Afişinizdeki Gibi Birebir Eklendi) -->
     <div class="ust-bilgi-bari">
-        <div>📍 Konum: Kahramanmaraş ve Çevresi</div>
-        <div>📞 Canlı Destek: <a href="tel:+905332506002">+90 (533) 250 60 02</a></div>
+        <div>📍 Kahramanmaraş ve Çevresi Anahtar Teslim</div>
+        <div>📞 Bize Ulaşın: <a href="tel:+905332506002">0533 250 60 02</a></div>
         <div>📸 Instagram: <a href="https://instagram.com" target="_blank">@akdyapidekorasyon</a></div>
     </div>
 
+    <!-- Afiş Konseptli Header -->
     <header>
         <h1>Akd Yapı Dekorasyon</h1>
-        <p>Alçıpan Sistemleri, Asma Tavan, Ahşap & Polyester Çıta Tasarımları</p>
+        <p>Hayalinizdeki Yaşam Alanlarını Birlikte Tasarlayalım!</p>
     </header>
 
     <div class="container">
-        <div class="intro-box">
-            <h2>Yaptığımız İşler ve Tasarımlarımız</h2>
-            <p>Kahramanmaraş ve çevresinde anahtar teslim tadilat, alçıpan, asma tavan işleri, ince boya, özel imalat modern TV üniteleri, ahşap ve polyester çıta çözümlerimizle evlerinize cazibe katıyoruz. Aşağıdan projelerimizin fotoğraflarını ve videolarını inceleyebilirsiniz.</p>
-        </div>
-
-        <h3 class="gallery-title">İşçilik Galerimiz</h3>
         
-        <div class="media-gallery">
-            <!-- FOTOĞRAFLAR (ALT YAZILARI HARFİYEN EN DOĞRU ŞEKİLDE DÜZELTİLDİ) -->
-            <div class="media-item"><img src="dosya1.jpg" alt="Polyester Çıta"><div class="media-desc">Lüks Gold Detaylı Duvar Çıtalama</div></div>
-            <div class="media-item"><img src="dosya2.jpg" alt="Duvar Çıtası"><div class="media-desc">Polyester Çıta Duvar Tasarımı</div></div>
-            <div class="media-item"><img src="dosya3.jpg" alt="Asma Tavan"><div class="media-desc">Dekoratif Alçıpan Tavan Motifi</div></div>
-            <div class="media-item"><img src="dosya5.jpg" alt="Alçıpan Işık bandı"><div class="media-desc">Led Işıklı Modern Asma Tavan Tasarımı</div></div>
-            <div class="media-item"><img src="dosya6.jpg" alt="Duvar Çıtalama"><div class="media-desc">Polyester Motifli Klasik Duvar Çıtası</div></div>
-            <div class="media-item"><img src="dosya8.jpg" alt="Alçıpan İşçiliği"><div class="media-desc">Asma Tavan & İnce Alçı Sıva İşçiliği</div></div>
-            <div class="media-item"><img src="dosya9.jpg" alt="Duvar Dekoru"><div class="media-desc">Lüks Salon Duvar Çıtalama Uygulaması</div></div>
-            <div class="media-item"><img src="dosya10.jpg" alt="Alçıpan"><div class="media-desc">Modern Alçıpan Işık Bandı & Boya</div></div>
-            <div class="media-item"><img src="dosya11.jpg" alt="Çıta Tasarımı"><div class="media-desc">Özel İmalat Ahşap & Polyester Çıta İşçiliği</div></div>
-            <div class="media-item"><img src="dosya16.jpg" alt="Tadilat Boya"><div class="media-desc">Anahtar Teslim Alçıpan ve Boya Uygulaması</div></div>
-
-            <!-- VİDEOLAR -->
-            <div class="media-item"><video src="dosya12.mp4" controls preload="metadata"></video><div class="media-desc">Polyester Çıta Uygulama Videomuz</div></div>
-            <div class="media-item"><video src="dosya13.mp4" controls preload="metadata"></video><div class="media-desc">Asma Tavan İşçilik Detay Videomuz</div></div>
-            <div class="media-item"><video src="dosya15.mp4" controls preload="metadata"></video><div class="media-desc">Alçıpan & TV Ünitesi Montaj Süreci</div></div>
-            <div class="media-item"><video src="dosya17.mp4" controls preload="metadata"></video><div class="media-desc">Duvar Çıtalama İnce İşçilik Videosu</div></div>
-            <div class="media-item"><video src="dosya18.mp4" controls preload="metadata"></video><div class="media-desc">Tamamlanan Salon Dekorasyon Projemiz</div></div>
-            <div class="media-item"><video src="dosya19.mp4" controls preload="metadata"></video><div class="media-desc">Tavan Motif Uygulama Aşamaları</div></div>
-            <div class="media-item"><video src="dosya20.mp4" controls preload="metadata"></video><div class="media-desc">Anahtar Teslim Ev Tadilatı Teslimatımız</div></div>
-        </div>
-
-        <!-- İletişim Butonları -->
-        <div class="btn-container">
-            <a href="https://wa.me" class="action-btn whatsapp-btn" target="_blank">
+        <!-- Afişteki 4 Temel İlke Bölümü -->
+        <div class="ozellikler-container">
+            <div class="ozellik-karti"><h4>💎 Modern Tasarım</h4><p>Yaşam alanınıza premium şıklık</p></div>
