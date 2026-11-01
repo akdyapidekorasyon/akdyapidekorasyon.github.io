@@ -3,292 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akd Yapı Dekorasyon | Premium Kahramanmaraş Tadilat & TV Ünitesi</title>
-    <!-- Modern ve Lüks Yazı Tipi -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <title>Akd Yapı Dekorasyon | Kahramanmaraş Ev Tadilatı & TV Ünitesi</title>
     <style>
-        /* Modern & Premium Tasarım Kuralları */
+        /* Her Cihazda Kusursuz Çalışan Garanti Tasarım */
         * { 
             box-sizing: border-box; 
             margin: 0; 
             padding: 0; 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            scroll-behavior: smooth; /* Butonlara basınca sayfayı yumuşakça kaydırır */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
         }
         
         body { 
-            background-color: #f8fafc; 
-            color: #0f172a; 
+            background-color: #f4f6f9; 
+            color: #333; 
             line-height: 1.6; 
         }
-
-        /* Lüks İletişim Üst Barı */
-        .top-contact-bar {
+        
+        /* Üst İletişim Bilgileri Alanı */
+        .ust-bilgi-bari {
             background-color: #0f172a;
-            color: #94a3b8;
-            font-size: 0.9rem;
+            color: #ffffff;
             padding: 12px 20px;
+            font-size: 0.95rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #1e293b;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
-        .top-contact-left a, .top-contact-right a {
-            color: #f1f5f9;
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 500;
-        }
-
-        .top-contact-left span {
-            margin-right: 20px;
-        }
-
-        .top-contact-left a:hover, .top-contact-right a:hover {
+        .ust-bilgi-bari a {
             color: #d4af37;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        /* Lüks Header Tasarımı */
+        /* Lüks ve Büyük Başlık Alanı */
         header { 
-            background: linear-gradient(135deg, #1e3c72 0%, #0f172a 100%); 
+            background: linear-gradient(135deg, #1e3c72, #2a5298); 
             color: white; 
             text-align: center; 
-            padding: 90px 20px; 
-            position: relative;
+            padding: 60px 20px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
         }
         
         header h1 { 
-            font-size: 3.5rem; 
-            font-weight: 800; 
+            font-size: 2.8rem; 
+            margin-bottom: 10px; 
+            font-weight: 700; 
             text-transform: uppercase; 
-            letter-spacing: -1px;
-            margin-bottom: 15px;
-            background: linear-gradient(to right, #ffffff, #f1f5f9, #d4af37);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
         
         header p { 
-            font-size: 1.3rem; 
-            font-weight: 300;
-            color: #94a3b8;
-            max-width: 750px;
-            margin: 0 auto;
+            font-size: 1.2rem; 
+            opacity: 0.9; 
         }
-
-        .container { 
-            max-width: 1240px; 
-            margin: -40px auto 60px; 
+        
+        .ana-kutu { 
+            max-width: 1200px; 
+            margin: 30px auto; 
             padding: 0 20px; 
         }
         
-        /* Karşılama Kartı */
-        .intro-box { 
-            background: #ffffff; 
-            padding: 45px; 
-            border-radius: 24px; 
-            box-shadow: 0 20px 40px -15px rgba(15,23,42,0.05); 
+        /* Giriş Açıklama Kutusu */
+        .tanitim-kutusu { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
             text-align: center; 
             margin-bottom: 40px; 
-            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .tanitim-kutusu h2 {
+            color: #1e3c72;
+            margin-bottom: 10px;
         }
         
-        .intro-box h2 { 
-            font-size: 2rem;
-            color: #0f172a; 
-            margin-bottom: 15px; 
-            font-weight: 700;
+        /* Büyük ve Belirgin Bölüm Başlıkları */
+        .bolum-basligi { 
+            text-align: center; 
+            color: #1e3c72; 
+            font-size: 2.2rem; 
+            margin: 50px 0 25px 0; 
+            font-weight: 700; 
         }
         
-        .intro-box p {
-            color: #64748b;
-            font-size: 1.1rem;
-            max-width: 850px;
-            margin: 0 auto;
+        .bolum-basligi::after { 
+            content: ''; 
+            display: block; 
+            width: 80px; 
+            height: 4px; 
+            background: #d4af37; 
+            margin: 10px auto 0; 
+            border-radius: 2px; 
         }
-
-        /* Şık Kategori Yönlendirme Butonları (Hatasız Saf CSS) */
-        .category-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 45px;
-        }
-
-        .tab-link-btn {
-            background-color: #ffffff;
-            color: #475569;
-            border: 1px solid #e2e8f0;
-            padding: 14px 30px;
-            font-size: 1.05rem;
-            font-weight: 600;
-            border-radius: 14px;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
-            display: inline-block;
-        }
-
-        .tab-link-btn:hover {
-            border-color: #0f172a;
-            color: #0f172a;
-            background-color: #f8fafc;
-            transform: translateY(-2px);
-        }
-
-        /* Bölüm Başlıkları (Premium Altın Detaylı) */
-        .section-title {
-            color: #0f172a;
-            font-size: 2rem;
-            margin: 40px 0 25px 0;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .section-title::after {
-            content: '';
-            flex: 1;
-            height: 2px;
-            background: linear-gradient(to right, #d4af37, transparent);
-        }
-
-        /* Medya Grid Yapısı */
-        .media-gallery { 
+        
+        /* Fotoğraf ve Video Grid Sistemi */
+        .galeri-alani { 
             display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); 
-            gap: 30px; 
-            margin-bottom: 20px; 
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+            gap: 25px; 
+            margin-bottom: 40px; 
         }
         
-        .media-item { 
-            background: #ffffff; 
-            border-radius: 20px; 
+        .galeri-karti { 
+            background: white; 
+            border-radius: 12px; 
             overflow: hidden; 
-            box-shadow: 0 10px 25px -5px rgba(15,23,42,0.03); 
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08); 
             display: flex; 
             flex-direction: column; 
-            border: 1px solid rgba(226, 232, 240, 0.7);
         }
         
-        .media-item:hover { 
-            transform: translateY(-8px); 
-            box-shadow: 0 30px 50px -10px rgba(15,23,42,0.1);
-        }
-        
-        .media-item img, .media-item video { 
+        .galeri-karti img, .galeri-karti video { 
             width: 100%; 
-            height: 290px; 
+            height: 270px; 
             object-fit: cover; 
-            background: #0f172a; 
-            border: none;
+            background: #000; 
+            border-bottom: 3px solid #1e3c72; 
         }
         
-        .media-desc { 
-            padding: 20px; 
+        .galeri-yazisi { 
+            padding: 15px; 
             text-align: center; 
-            font-weight: 600; 
-            color: #1e293b; 
-            font-size: 1.05rem; 
-            border-top: 1px solid #f1f5f9;
-        }
-
-        /* İletişim Alt Butonları */
-        .btn-container { 
-            display: flex; 
-            justify-content: center;
-            gap: 20px; 
-            margin: 60px auto 20px; 
-            max-width: 700px;
+            font-weight: bold; 
+            color: #444; 
+            background: #fff; 
+            font-size: 1rem; 
         }
         
-        .action-btn { 
+        /* İletişim Butonları Alanı */
+        .buton-grubu { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 15px; 
+            margin: 50px auto; 
+        }
+        
+        .iletisim-butonu { 
             display: flex; 
             align-items: center; 
             justify-content: center; 
             color: white; 
             text-decoration: none; 
-            padding: 16px 30px; 
-            border-radius: 16px; 
-            font-size: 1.1rem; 
-            font-weight: 600; 
+            padding: 18px 35px; 
+            border-radius: 50px; 
+            font-size: 1.2rem; 
+            font-weight: bold; 
             width: 100%; 
-            transition: all 0.3s ease;
+            max-width: 450px; 
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15); 
+            transition: transform 0.2s ease; 
+            text-align: center; 
+        }
+
+        .iletisim-butonu:hover {
+            transform: scale(1.03);
         }
         
-        .action-btn svg { 
-            width: 24px; 
-            height: 24px; 
+        .iletisim-butonu svg { 
+            width: 26px; 
+            height: 26px; 
             margin-right: 12px; 
             fill: white; 
         }
         
-        .whatsapp-btn { 
-            background-color: #128c7e; 
-            box-shadow: 0 8px 20px rgba(18, 140, 126, 0.2);
-        }
-        .whatsapp-btn:hover { 
-            background-color: #075e54; 
-            transform: translateY(-3px);
-        }
+        .whatsapp-yesil { background-color: #25d366; }
+        .whatsapp-yesil:hover { background-color: #20ba5a; }
         
-        .instagram-btn { 
-            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-            box-shadow: 0 8px 20px rgba(220, 39, 67, 0.2);
-        }
-        .instagram-btn:hover { 
-            transform: translateY(-3px);
-        }
+        .instagram-renkli { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
         
-        /* Modern Premium Footer */
+        /* Sayfa Alt Bilgisi (Footer) */
         footer { 
             background: #0f172a; 
-            color: #94a3b8; 
+            color: white; 
             text-align: center; 
-            padding: 40px 20px; 
+            padding: 30px 20px; 
             font-size: 0.95rem; 
-            margin-top: 80px; 
-            border-top: 1px solid #1e293b;
+            margin-top: 60px; 
         }
 
-        footer .footer-bold {
-            color: #ffffff;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        /* Mobil Cihaz Tam Uyumluluk Ayarları */
+        /* Telefonlarda Tam Uyum */
         @media (max-width: 768px) { 
-            .top-contact-bar { flex-direction: column; gap: 8px; text-align: center; }
-            .top-contact-left span { display: block; margin: 5px 0; }
-            header { padding: 70px 20px; }
-            header h1 { font-size: 2.3rem; } 
-            .category-tabs { padding: 0 10px; flex-wrap: wrap; }
-            .tab-link-btn { padding: 12px 20px; font-size: 0.95rem; flex: 1; text-align: center; min-width: 140px; }
-            .media-gallery { grid-template-columns: 1fr; } 
-            .btn-container { flex-direction: column; gap: 15px; padding: 0 10px; }
+            header h1 { font-size: 2rem; } 
+            .galeri-alani { grid-template-columns: 1fr; } 
+            .ust-bilgi-bari { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Üst İletişim Barı (Bilgileriniz Eklenmiştir) -->
-    <div class="top-contact-bar">
-        <div class="top-contact-left">
-            <span>📍 Kahramanmaraş</span>
-            <span>📞 İletişim: <a href="tel:+905331234567">+90 (533) 123 45 67</a></span>
-        </div>
-        <div class="top-contact-right">
-            <a href="https://instagram.com" target="_blank">📸 @akdyapidekorasyon</a>
-            <a href="https://wa.me" target="_blank">💬 WhatsApp</a>
-        </div>
+    <!-- Üst İletişim Bilgileri (Numaranız Eklendi) -->
+    <div class="ust-bilgi-bari">
+        <div>📍 Konum: Kahramanmaraş ve Çevresi</div>
+        <div>📞 Telefon: <a href="tel:+905332506002">+90 (533) 250 60 02</a></div>
+        <div>📸 Instagram: <a href="https://instagram.com" target="_blank">@akdyapidekorasyon</a></div>
     </div>
 
     <!-- Başlık Bölümü -->
@@ -297,19 +208,46 @@
         <p>Kahramanmaraş Ev Tadilatı, Modern TV Üniteleri & Duvar Paneli Çözümleri</p>
     </header>
 
-    <div class="container">
-        <!-- Giriş Tanıtım Paneli -->
-        <div class="intro-box">
+    <div class="ana-kutu">
+        
+        <!-- Giriş Yazısı -->
+        <div class="tanitim-kutusu">
             <h2>Yaptığımız İşler ve Tasarımlarımız</h2>
-            <p>Evinizin çehresini değiştiren ince işçilik uygulamalarımızı aşağıdan inceleyebilirsiniz. Görmek istediğiniz bölüme hızlıca geçiş yapmak için aşağıdaki butonları kullanabilirsiniz.</p>
+            <p>Kahramanmaraş ve çevresinde anahtar teslim tadilat, alçı, boya, ince işçilik, özel imalat modern TV üniteleri ve dekoratif panel çözümlerimizle evlerinize şıklık katıyoruz. Aşağıdan fotoğraflarımızı ve videolarımızı ayrı bölümler halinde inceleyebilirsiniz.</p>
         </div>
 
-        <!-- Hızlı Navigasyon Butonları (Hata Vermeyen Sistem) -->
-        <div class="category-tabs">
-            <a href="#fotograflar" class="tab-link-btn">🖼️ Fotoğraf Galerisi</a>
-            <a href="#videolar" class="tab-link-btn">📹 Uygulama Videoları</a>
-        </div>
+        <!-- ================= FOTOĞRAFLAR BÖLÜMÜ ================= -->
+        <h2 class="bolum-basligi">📸 Fotoğraf Galerisi</h2>
         
-        <!-- FOTOĞRAFLAR BÖLÜMÜ -->
-        <h2 class="section-title" id="fotograflar">Fotoğraf Galerisi</h2>
-        <div class="media-gallery">
+        <div class="galeri-alani">
+            <div class="galeri-karti"><img src="dosya1.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Modern TV Ünitesi Tasarımı</div></div>
+            <div class="galeri-karti"><img src="dosya2.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Modern TV Ünitesi Tasarımı</div></div>
+            <div class="galeri-karti"><img src="dosya3.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Duvar Paneli Uygulaması</div></div>
+            <div class="galeri-karti"><img src="dosya5.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Dekorasyon Çözümümüz</div></div>
+            <div class="galeri-karti"><img src="dosya6.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Modern Salon Tasarımı</div></div>
+            <div class="galeri-karti"><img src="dosya8.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Tasarım Detayı</div></div>
+            <div class="galeri-karti"><img src="dosya9.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Anahtar Teslim Tadilat</div></div>
+            <div class="galeri-karti"><img src="dosya10.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Duvar Dekorasyonu</div></div>
+            <div class="galeri-karti"><img src="dosya11.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Özel İmalat İşçiliğimiz</div></div>
+            <div class="galeri-karti"><img src="dosya16.jpg" alt="Akd Yapı"><div class="galeri-yazisi">Alçı & Boya İşçiliği</div></div>
+        </div>
+
+
+        <!-- ================= VİDEOLAR BÖLÜMÜ ================= -->
+        <h2 class="bolum-basligi">📹 Uygulama Videoları</h2>
+        
+        <div class="galeri-alani">
+            <div class="galeri-karti"><video src="dosya12.mp4" controls preload="metadata"></video><div class="galeri-yazisi">Uygulama Videomuz</div></div>
+            <div class="galeri-karti"><video src="dosya13.mp4" controls preload="metadata"></video><div class="galeri-yazisi">Uygulama Videomuz</div></div>
+            <div class="galeri-karti"><video src="dosya15.mp4" controls preload="metadata"></video><div class="galeri-yazisi">Uygulama Videomuz</div></div>
+            <div class="galeri-karti"><video src="dosya17.mp4" controls preload="metadata"></video><div class="galeri-yazisi">Uygulama Videomuz</div></div>
+            <div class="galeri-karti"><video src="dosya18.mp4" controls preload="metadata"></video><div class="galeri-yazisi">Uygulama Videomuz</div></div>
+            <div class="galeri-karti"><video src="dosya19.mp4" controls preload="metadata"></video><div class="galeri-yazisi">Uygulama Videomuz</div></div>
+            <div class="galeri-karti"><video src="dosya20.mp4" controls preload="metadata"></video><div class="galeri-yazisi">Uygulama Videomuz</div></div>
+        </div>
+
+
+        <!-- Hızlı İletişim Butonları -->
+        <div class="buton-grubu">
+            <!-- WhatsApp Butonu (Numaranız Entegre Edildi) -->
+            <a href="https://wa.me" class="iletisim-butonu whatsapp-yesil" target="_blank">
