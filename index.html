@@ -3,108 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akd Yapı Dekorasyon | Kahramanmaraş TV Ünitesi & Tadilat</title>
+    <title>Akd Yapı Dekorasyon | Premium Kahramanmaraş Tadilat & TV Ünitesi</title>
+    <!-- Modern Yazı Tipi -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; text-align: center; padding: 40px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        header h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-        header p { font-size: 1.1rem; opacity: 0.9; }
-        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
-        .intro-box { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; margin-bottom: 40px; }
-        .intro-box h2 { color: #1e3c72; margin-bottom: 15px; }
-        .gallery-title { text-align: center; color: #1e3c72; font-size: 2rem; margin-bottom: 25px; font-weight: 600; position: relative; }
-        .gallery-title::after { content: ''; display: block; width: 60px; height: 4px; background: #25d366; margin: 10px auto 0; border-radius: 2px; }
+        /* Ultra Modern & Lüks Mimari Tema */
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+        }
         
-        .media-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px; }
-        .media-item { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 12px rgba(0,0,0,0.08); transition: transform 0.3s ease; display: flex; flex-direction: column; }
-        .media-item:hover { transform: translateY(-5px); }
-        .media-item img, .media-item video { width: 100%; height: 250px; object-fit: cover; background: #000; border-bottom: 3px solid #1e3c72; }
-        .media-desc { padding: 15px; text-align: center; font-weight: 600; color: #555; background: #fff; font-size: 0.95rem; }
+        body { 
+            background-color: #f8fafc; 
+            color: #0f172a; 
+            line-height: 1.6; 
+        }
+
+        /* En Üst Şık İletişim Çubuğu */
+        .top-contact-bar {
+            background-color: #0f172a;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .top-contact-left span {
+            margin-right: 20px;
+        }
+
+        .top-contact-right a {
+            color: #f1f5f9;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .top-contact-right a:hover {
+            color: #d4af37;
+        }
+
+        /* Lüks Header Tasarımı (Büyük Ekran Sıçraması) */
+        header { 
+            background: linear-gradient(135deg, #1e3c72 0%, #0f172a 100%); 
+            color: white; 
+            text-align: center; 
+            padding: 100px 20px; 
+            position: relative;
+        }
         
-        .btn-container { display: flex; flex-direction: column; align-items: center; gap: 15px; margin: 40px auto; }
-        .action-btn { display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; padding: 18px 35px; border-radius: 50px; font-size: 1.2rem; font-weight: bold; width: 100%; max-width: 400px; box-shadow: 0 6px 20px rgba(0,0,0,0.15); transition: all 0.3s ease; text-align: center; }
-        .action-btn:hover { transform: scale(1.05); }
-        .action-btn svg { width: 26px; height: 26px; margin-right: 12px; fill: white; }
+        header h1 { 
+            font-size: 3.5rem; 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #ffffff, #f1f5f9, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         
-        .whatsapp-btn { background-color: #25d366; }
-        .whatsapp-btn:hover { background-color: #20ba5a; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+        header p { 
+            font-size: 1.3rem; 
+            font-weight: 300;
+            color: #94a3b8;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .container { 
+            max-width: 1240px; 
+            margin: -40px auto 60px; 
+            padding: 0 20px; 
+        }
         
-        .instagram-btn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
-        .instagram-btn:hover { box-shadow: 0 6px 20px rgba(220, 39, 67, 0.4); }
+        /* Karşılama Kartı */
+        .intro-box { 
+            background: #ffffff; 
+            padding: 45px; 
+            border-radius: 24px; 
+            box-shadow: 0 20px 40px -15px rgba(15,23,42,0.05); 
+            text-align: center; 
+            margin-bottom: 40px; 
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
         
-        footer { background: #1e3c72; color: white; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 50px; }
-        @media (max-width: 768px) { header h1 { font-size: 1.8rem; } .media-gallery { grid-template-columns: 1fr; } }
+        .intro-box h2 { 
+            font-size: 2rem;
+            color: #0f172a; 
+            margin-bottom: 15px; 
+        }
+        
+        .intro-box p {
+            color: #64748b;
+            font-size: 1.1rem;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* Şık Kategori Seçim Menüsü (Tabs) */
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .tab-btn {
+            background-color: #ffffff;
+            color: #475569;
+            border: 1px solid #e2e8f0;
+            padding: 14px 30px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+        }
+
+        .tab-btn:hover {
+            border-color: #cbd5e1;
+            color: #0f172a;
+            transform: translateY(-2px);
+        }
+
+        .tab-btn.active {
+            background-color: #0f172a;
+            color: #ffffff;
+            border-color: #0f172a;
+            box-shadow: 0 10px 20px -5px rgba(15, 23, 42, 0.2);
+        }
+
+        /* Medya Grid Yapısı ve Akıllı Filtreleme */
+        .media-gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); 
+            gap: 30px; 
+            margin-bottom: 50px; 
+        }
+        
+        .media-item { 
+            background: #ffffff; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 25px -5px rgba(15,23,42,0.03); 
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+            display: flex; 
+            flex-direction: column; 
+            border: 1px solid rgba(226, 232, 240, 0.7);
+        }
+        
+        /* Filtreleme Gizleme Sınıfı */
+        .media-item.hidden {
+            display: none !important;
+        }
+        
+        .media-item:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 30px 50px -10px rgba(15,23,42,0.1);
+        }
+        
+        .media-item img, .media-item video { 
+            width: 100%; 
+            height: 290px; 
+            object-fit: cover; 
+            background: #0f172a; 
+        }
+        
+        .media-desc { 
+            padding: 20px; 
+            text-align: center; 
+            font-weight: 600; 
+            color: #1e293b; 
+            font-size: 1.05rem; 
+            border-top: 1px solid #f1f5f9;
+        }
+
+        /* Sabit Hızlı Alt Aksiyon Butonları */
+        .btn-container { 
+            display: flex; 
+            justify-content: center;
+            gap: 20px; 
+            margin: 60px auto 20px; 
+            max-width: 700px;
+        }
+        
+        .action-btn { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: white; 
+            text-decoration: none; 
+            padding: 16px 30px; 
+            border-radius: 16px; 
+            font-size: 1.1rem; 
+            font-weight: 600; 
+            width: 100%; 
+            transition: all 0.3s ease;
+        }
+        
+        .action-btn svg { 
+            width: 24px; 
+            height: 24px; 
+            margin-right: 12px; 
+            fill: white; 
+        }
+        
+        .whatsapp-btn { 
+            background-color: #128c7e; 
+            box-shadow: 0 8px 20px rgba(18, 140, 126, 0.2);
+        }
+        .whatsapp-btn:hover { 
+            background-color: #075e54; 
+            transform: translateY(-3px);
+        }
+        
+        .instagram-btn { 
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+            box-shadow: 0 8px 20px rgba(220, 39, 67, 0.2);
+        }
+        .instagram-btn:hover { 
+            transform: translateY(-3px);
+        }
+        
+        /* Modern Premium Footer */
+        footer { 
+            background: #0f172a; 
+            color: #94a3b8; 
+            text-align: center; 
+            padding: 40px 20px; 
+            font-size: 0.95rem; 
+            margin-top: 80px; 
+            border-top: 1px solid #1e293b;
+        }
+
+        footer .footer-bold {
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        /* Telefon ve Mobil Ekran Uyumu */
+        @media (max-width: 768px) { 
+            .top-contact-bar { flex-direction: column; gap: 8px; text-align: center; }
+            .top-contact-left span { margin: 0 10px; }
+            header { padding: 70px 20px; }
+            header h1 { font-size: 2.3rem; } 
+            .category-tabs { flex-direction: row; font-size: 0.9rem; padding: 0 10px; }
+            .tab-btn { padding: 10px 20px; font-size: 0.95rem; flex: 1; text-align: center; }
+            .media-gallery { grid-template-columns: 1fr; } 
+            .btn-container { flex-direction: column; gap: 15px; padding: 0 10px; }
+        }
     </style>
 </head>
 <body>
 
+    <!-- Üst Bilgi Barı (Numara ve Sosyal Medya Doğrudan Eklendi) -->
+    <div class="top-contact-bar">
+        <div class="top-contact-left">
+            <span>📍 Kahramanmaraş</span>
+            <span>📞 <a href="tel:+905331234567" style="color:inherit; text-decoration:none;">+90 (533) 123 45 67</a></span>
+        </div>
+        <div class="top-contact-right">
+            <a href="https://instagram.com" target="_blank">📸 @akdyapidekorasyon</a>
+            <a href="https://wa.me" target="_blank">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Başlık Alanı -->
     <header>
         <h1>Akd Yapı Dekorasyon</h1>
         <p>Kahramanmaraş Ev Tadilatı, Modern TV Üniteleri & Duvar Paneli Çözümleri</p>
     </header>
 
     <div class="container">
+        <!-- Karşılama Paneli -->
         <div class="intro-box">
             <h2>Yaptığımız İşler ve Tasarımlarımız</h2>
-            <p>Kahramanmaraş ve çevresinde anahtar teslim tadilat, alçı, boya, ince işçilik, özel imalat modern TV üniteleri ve dekoratif panel çözümlerimizle evlerinize şıklık katıyoruz. Aşağıdan güncel işlerimizin fotoğraflarını ve videolarını inceleyebilirsiniz.</p>
+            <p>Evinizin çehresini değiştiren ince işçilik uygulamalarımızı aşağıdan inceleyebilirsiniz. Görmek istediğiniz medya türünü seçerek galeriyi filtreleyebilirsiniz.</p>
         </div>
 
-        <h3 class="gallery-title">İşçilik Galerimiz</h3>
+        <!-- İstediğin Harika Bölüm Seçme Sekmeleri (Tabs) -->
+        <div class="category-tabs">
+            <button class="tab-btn active" onclick="filterMedia('all')">✨ Hepsini Gör</button>
+            <button class="tab-btn" onclick="filterMedia('photo')">🖼️ Sadece Fotoğraflar</button>
+            <button class="tab-btn" onclick="filterMedia('video')">📹 Sadece Videolar</button>
+        </div>
         
+        <!-- Akıllı Sınıflarla Ayrılmış Medya Havuzu -->
         <div class="media-gallery">
-            <!-- GÖRSELLER (Klasöründeki JPG Dosyaları) -->
-            <div class="media-item"><img src="dosya1.jpg" alt="Akd Yapı"><div class="media-desc">Modern TV Ünitesi Tasarımı</div></div>
-            <div class="media-item"><img src="dosya2.jpg" alt="Akd Yapı"><div class="media-desc">Modern TV Ünitesi Tasarımı</div></div>
-            <div class="media-item"><img src="dosya3.jpg" alt="Akd Yapı"><div class="media-desc">Duvar Paneli Uygulaması</div></div>
-            <div class="media-item"><img src="dosya5.jpg" alt="Akd Yapı"><div class="media-desc">Dekorasyon Çözümümüz</div></div>
-            <div class="media-item"><img src="dosya6.jpg" alt="Akd Yapı"><div class="media-desc">Modern Salon Tasarımı</div></div>
-            <div class="media-item"><img src="dosya8.jpg" alt="Akd Yapı"><div class="media-desc">Tasarım Detayı</div></div>
-            <div class="media-item"><img src="dosya9.jpg" alt="Akd Yapı"><div class="media-desc">Anahtar Teslim Tadilat</div></div>
-            <div class="media-item"><img src="dosya10.jpg" alt="Akd Yapı"><div class="media-desc">Duvar Dekorasyonu</div></div>
-            <div class="media-item"><img src="dosya11.jpg" alt="Akd Yapı"><div class="media-desc">Özel İmalat İşçiliğimiz</div></div>
-            <div class="media-item"><img src="dosya16.jpg" alt="Akd Yapı"><div class="media-desc">Alçı & Boya İşçiliği</div></div>
-
-            <!-- VİDEOLAR (Klasöründeki MP4 Dosyaları) -->
-            <div class="media-item"><video src="dosya12.mp4" controls preload="metadata"></video><div class="media-desc">Uygulama Videomuz</div></div>
-            <div class="media-item"><video src="dosya13.mp4" controls preload="metadata"></video><div class="media-desc">Uygulama Videomuz</div></div>
-            <div class="media-item"><video src="dosya15.mp4" controls preload="metadata"></video><div class="media-desc">Uygulama Videomuz</div></div>
-            <div class="media-item"><video src="dosya17.mp4" controls preload="metadata"></video><div class="media-desc">Uygulama Videomuz</div></div>
-            <div class="media-item"><video src="dosya18.mp4" controls preload="metadata"></video><div class="media-desc">Uygulama Videomuz</div></div>
-            <div class="media-item"><video src="dosya19.mp4" controls preload="metadata"></video><div class="media-desc">Uygulama Videomuz</div></div>
-            <div class="media-item"><video src="dosya20.mp4" controls preload="metadata"></video><div class="media-desc">Uygulama Videomuz</div></div>
-        </div>
-
-        <!-- İletişim Butonları -->
-        <div class="btn-container">
-            <a href="https://wa.me" class="action-btn whatsapp-btn" target="_blank">
-                <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.4.011 11.966.011c3.181.012 6.174 1.24 8.426 3.497 2.253 2.256 3.489 5.253 3.484 8.437-.01 6.559-5.351 11.898-11.914 11.898-2.007-.001-3.973-.509-5.714-1.478L0 24zm6.59-4.846c1.6.95 3.498 1.452 5.43 1.453l.014.004c5.443 0 9.873-4.426 9.877-9.872.001-2.639-1.02-5.12-2.873-6.975C17.213 1.905 14.73 .882 12.09 .882c-5.452 0-9.887 4.434-9.892 9.884-.001 1.99.52 3.935 1.511 5.64l-.994 3.634 3.732-.979zm11.415-4.887c-.314-.157-1.86-.92-2.148-1.025-.289-.105-.499-.157-.708.157-.208.314-.807 1.025-.99 1.235-.183.209-.365.236-.68.078-3.111-1.558-4.437-2.73-5.222-4.08-.225-.387-.024-.597.173-.794.178-.178.395-.462.592-.693.197-.23.263-.394.395-.656.132-.263.066-.499-.033-.708-.099-.209-.708-1.705-.97-2.333-.255-.615-.515-.533-.708-.543-.183-.009-.395-.011-.607-.011-.213 0-.562.08-.856.401-.294.321-1.121 1.099-1.121 2.68 0 1.582 1.151 3.109 1.312 3.32.162.21 2.261 3.45 5.479 4.839.765.331 1.362.528 1.829.677.77.244 1.47.21 2.022.128.615-.093 1.861-.759 2.124-1.493.263-.735.263-1.364.184-1.493-.08-.13-.289-.209-.604-.366z"/></svg>
-                Bizimle WhatsApp'tan İletişime Geçin
-            </a>
-            
-            <a href="https://instagram.com" class="action-btn instagram-btn" target="_blank">
-                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-                Instagram Sayfamızı Takip Edin
-            </a>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Akd Yapı Dekorasyon - Kahramanmaraş. Tüm Hakları Saklıdır.</p>
-    </footer>
-</body>
-</html>
-<!-- Şahsi İletişim Bilgileri (Footer) -->
-<footer style="text-align: center; padding: 25px; background-color: #222; border-top: 2px solid #ffcc00; margin-top: 50px;">
-    <p style="font-family: Arial, sans-serif; color: #ffcc00; margin-bottom: 12px; font-size: 18px; font-weight: bold; letter-spacing: 0.5px;">AKD Yapı Dekorasyon İletişim</p>
-    
-    <!-- Doğrudan Arama Linki ve Düz Yazı -->
-    <p style="font-family: Arial, sans-serif; color: #bbb; margin: 8px 0; font-size: 16px;">
-        📞 Telefon: <a href="tel:+905332506002" style="color: #ffcc00; text-decoration: none; font-weight: bold;">0533 250 60 02</a>
-    </p>
-    
-    <!-- Doğrudan Instagram Linki ve Düz Yazı -->
-    <p style="font-family: Arial, sans-serif; color: #bbb; margin: 8px 0; font-size: 16px;">
-        📸 Instagram: <a href="https://instagram.com" target="_blank" style="color: #e1306c; text-decoration: none; font-weight: bold;">@akdyapidekorasyon</a>
-    </p>
-</footer>
+            <!-- FOTOĞRAFLAR (data-type="photo" eklendi) -->
+            <div class="media-item" data-type="photo"><img src="dosya1.jpg" alt="Akd Yapı"><div class="media-desc">Modern TV Ünitesi Tasarımı</div></div>
