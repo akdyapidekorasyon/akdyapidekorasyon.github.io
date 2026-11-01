@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akd Yapı Dekorasyon | Premium Kahramanmaraş Tadilat & TV Ünitesi</title>
-    <!-- Modern Yazı Tipi -->
+    <!-- Modern ve Lüks Yazı Tipi -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-        /* Ultra Modern & Lüks Mimari Tema */
+        /* Modern & Premium Tasarım Kuralları */
         * { 
             box-sizing: border-box; 
             margin: 0; 
             padding: 0; 
             font-family: 'Plus Jakarta Sans', sans-serif; 
+            scroll-behavior: smooth; /* Butonlara basınca sayfayı yumuşakça kaydırır */
         }
         
         body { 
@@ -24,40 +25,39 @@
             line-height: 1.6; 
         }
 
-        /* En Üst Şık İletişim Çubuğu */
+        /* Lüks İletişim Üst Barı */
         .top-contact-bar {
             background-color: #0f172a;
             color: #94a3b8;
-            font-size: 0.85rem;
-            padding: 10px 20px;
+            font-size: 0.9rem;
+            padding: 12px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid #1e293b;
         }
 
-        .top-contact-left span {
-            margin-right: 20px;
-        }
-
-        .top-contact-right a {
+        .top-contact-left a, .top-contact-right a {
             color: #f1f5f9;
             text-decoration: none;
-            margin-left: 15px;
             transition: color 0.3s;
             font-weight: 500;
         }
 
-        .top-contact-right a:hover {
+        .top-contact-left span {
+            margin-right: 20px;
+        }
+
+        .top-contact-left a:hover, .top-contact-right a:hover {
             color: #d4af37;
         }
 
-        /* Lüks Header Tasarımı (Büyük Ekran Sıçraması) */
+        /* Lüks Header Tasarımı */
         header { 
             background: linear-gradient(135deg, #1e3c72 0%, #0f172a 100%); 
             color: white; 
             text-align: center; 
-            padding: 100px 20px; 
+            padding: 90px 20px; 
             position: relative;
         }
         
@@ -101,6 +101,7 @@
             font-size: 2rem;
             color: #0f172a; 
             margin-bottom: 15px; 
+            font-weight: 700;
         }
         
         .intro-box p {
@@ -110,15 +111,15 @@
             margin: 0 auto;
         }
 
-        /* Şık Kategori Seçim Menüsü (Tabs) */
+        /* Şık Kategori Yönlendirme Butonları (Hatasız Saf CSS) */
         .category-tabs {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-bottom: 35px;
+            margin-bottom: 45px;
         }
 
-        .tab-btn {
+        .tab-link-btn {
             background-color: #ffffff;
             color: #475569;
             border: 1px solid #e2e8f0;
@@ -126,30 +127,44 @@
             font-size: 1.05rem;
             font-weight: 600;
             border-radius: 14px;
-            cursor: pointer;
+            text-decoration: none;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+            display: inline-block;
         }
 
-        .tab-btn:hover {
-            border-color: #cbd5e1;
+        .tab-link-btn:hover {
+            border-color: #0f172a;
             color: #0f172a;
+            background-color: #f8fafc;
             transform: translateY(-2px);
         }
 
-        .tab-btn.active {
-            background-color: #0f172a;
-            color: #ffffff;
-            border-color: #0f172a;
-            box-shadow: 0 10px 20px -5px rgba(15, 23, 42, 0.2);
+        /* Bölüm Başlıkları (Premium Altın Detaylı) */
+        .section-title {
+            color: #0f172a;
+            font-size: 2rem;
+            margin: 40px 0 25px 0;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
-        /* Medya Grid Yapısı ve Akıllı Filtreleme */
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(to right, #d4af37, transparent);
+        }
+
+        /* Medya Grid Yapısı */
         .media-gallery { 
             display: grid; 
             grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); 
             gap: 30px; 
-            margin-bottom: 50px; 
+            margin-bottom: 20px; 
         }
         
         .media-item { 
@@ -163,11 +178,6 @@
             border: 1px solid rgba(226, 232, 240, 0.7);
         }
         
-        /* Filtreleme Gizleme Sınıfı */
-        .media-item.hidden {
-            display: none !important;
-        }
-        
         .media-item:hover { 
             transform: translateY(-8px); 
             box-shadow: 0 30px 50px -10px rgba(15,23,42,0.1);
@@ -178,6 +188,7 @@
             height: 290px; 
             object-fit: cover; 
             background: #0f172a; 
+            border: none;
         }
         
         .media-desc { 
@@ -189,7 +200,7 @@
             border-top: 1px solid #f1f5f9;
         }
 
-        /* Sabit Hızlı Alt Aksiyon Butonları */
+        /* İletişim Alt Butonları */
         .btn-container { 
             display: flex; 
             justify-content: center;
@@ -253,14 +264,14 @@
             margin-bottom: 5px;
         }
 
-        /* Telefon ve Mobil Ekran Uyumu */
+        /* Mobil Cihaz Tam Uyumluluk Ayarları */
         @media (max-width: 768px) { 
             .top-contact-bar { flex-direction: column; gap: 8px; text-align: center; }
-            .top-contact-left span { margin: 0 10px; }
+            .top-contact-left span { display: block; margin: 5px 0; }
             header { padding: 70px 20px; }
             header h1 { font-size: 2.3rem; } 
-            .category-tabs { flex-direction: row; font-size: 0.9rem; padding: 0 10px; }
-            .tab-btn { padding: 10px 20px; font-size: 0.95rem; flex: 1; text-align: center; }
+            .category-tabs { padding: 0 10px; flex-wrap: wrap; }
+            .tab-link-btn { padding: 12px 20px; font-size: 0.95rem; flex: 1; text-align: center; min-width: 140px; }
             .media-gallery { grid-template-columns: 1fr; } 
             .btn-container { flex-direction: column; gap: 15px; padding: 0 10px; }
         }
@@ -268,11 +279,11 @@
 </head>
 <body>
 
-    <!-- Üst Bilgi Barı (Numara ve Sosyal Medya Doğrudan Eklendi) -->
+    <!-- Üst İletişim Barı (Bilgileriniz Eklenmiştir) -->
     <div class="top-contact-bar">
         <div class="top-contact-left">
             <span>📍 Kahramanmaraş</span>
-            <span>📞 <a href="tel:+905331234567" style="color:inherit; text-decoration:none;">+90 (533) 123 45 67</a></span>
+            <span>📞 İletişim: <a href="tel:+905331234567">+90 (533) 123 45 67</a></span>
         </div>
         <div class="top-contact-right">
             <a href="https://instagram.com" target="_blank">📸 @akdyapidekorasyon</a>
@@ -280,27 +291,25 @@
         </div>
     </div>
 
-    <!-- Başlık Alanı -->
+    <!-- Başlık Bölümü -->
     <header>
         <h1>Akd Yapı Dekorasyon</h1>
         <p>Kahramanmaraş Ev Tadilatı, Modern TV Üniteleri & Duvar Paneli Çözümleri</p>
     </header>
 
     <div class="container">
-        <!-- Karşılama Paneli -->
+        <!-- Giriş Tanıtım Paneli -->
         <div class="intro-box">
             <h2>Yaptığımız İşler ve Tasarımlarımız</h2>
-            <p>Evinizin çehresini değiştiren ince işçilik uygulamalarımızı aşağıdan inceleyebilirsiniz. Görmek istediğiniz medya türünü seçerek galeriyi filtreleyebilirsiniz.</p>
+            <p>Evinizin çehresini değiştiren ince işçilik uygulamalarımızı aşağıdan inceleyebilirsiniz. Görmek istediğiniz bölüme hızlıca geçiş yapmak için aşağıdaki butonları kullanabilirsiniz.</p>
         </div>
 
-        <!-- İstediğin Harika Bölüm Seçme Sekmeleri (Tabs) -->
+        <!-- Hızlı Navigasyon Butonları (Hata Vermeyen Sistem) -->
         <div class="category-tabs">
-            <button class="tab-btn active" onclick="filterMedia('all')">✨ Hepsini Gör</button>
-            <button class="tab-btn" onclick="filterMedia('photo')">🖼️ Sadece Fotoğraflar</button>
-            <button class="tab-btn" onclick="filterMedia('video')">📹 Sadece Videolar</button>
+            <a href="#fotograflar" class="tab-link-btn">🖼️ Fotoğraf Galerisi</a>
+            <a href="#videolar" class="tab-link-btn">📹 Uygulama Videoları</a>
         </div>
         
-        <!-- Akıllı Sınıflarla Ayrılmış Medya Havuzu -->
+        <!-- FOTOĞRAFLAR BÖLÜMÜ -->
+        <h2 class="section-title" id="fotograflar">Fotoğraf Galerisi</h2>
         <div class="media-gallery">
-            <!-- FOTOĞRAFLAR (data-type="photo" eklendi) -->
-            <div class="media-item" data-type="photo"><img src="dosya1.jpg" alt="Akd Yapı"><div class="media-desc">Modern TV Ünitesi Tasarımı</div></div>
