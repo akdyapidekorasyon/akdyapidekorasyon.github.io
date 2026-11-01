@@ -19,21 +19,22 @@
         }
         
         body { 
-            background-color: #0b0f19; /* Derin ve şık gece siyahı/mavisi */
-            /* Arka planda şık mimari geometrik çizgiler oluşturma */
+            background-color: #0b0c10; /* Asil Siyah */
+            /* 3 Boyutlu Lüks Baklava Dilimi Çıta Efekti Veren Arka Plan Geometrisi */
             background-image: 
-                radial-gradient(circle at 20% 20%, rgba(30, 60, 114, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-                linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px);
-            background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+                linear-gradient(135deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%), 
+                linear-gradient(225deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%), 
+                linear-gradient(45deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%), 
+                linear-gradient(315deg, rgba(212, 175, 55, 0.03) 25%, #0b0c10 25%);
+            background-position: 40px 0, 40px 0, 0 0, 0 0;
+            background-size: 80px 80px;
             color: #f1f5f9; 
             line-height: 1.6; 
         }
         
         /* En Üst Şık İletişim Çubuğu */
         .ust-bilgi-bari {
-            background: rgba(15, 23, 42, 0.8);
+            background: rgba(17, 19, 24, 0.95);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             color: #94a3b8;
@@ -44,49 +45,48 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 10px;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            border-bottom: 2px solid #d4af37; /* Gold Çizgi */
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
         }
 
         .ust-bilgi-bari a {
             color: #d4af37; /* Altın Sarısı */
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
         }
         .ust-bilgi-bari a:hover {
             color: #ffffff;
-            text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
         }
 
         /* Işıltılı ve Canlı Başlık Alanı (Hero Section) */
         header { 
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 60, 114, 0.8) 100%);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            background: linear-gradient(180deg, rgba(17, 19, 24, 0.9) 0%, rgba(11, 12, 16, 0.6) 100%);
             text-align: center; 
-            padding: 90px 20px; 
+            padding: 80px 20px; 
             position: relative;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
         }
         
-        /* Başlıkta Altın Varak ve Platin Parlama Efekti */
+        /* Başlıkta Altın Varak ve Parlama Efekti */
         header h1 { 
-            font-size: 3.6rem; 
-            margin-bottom: 15px; 
+            font-size: 3.5rem; 
+            margin-bottom: 12px; 
             font-weight: 800; 
             text-transform: uppercase; 
-            letter-spacing: -1px;
-            background: linear-gradient(135deg, #ffffff 30%, #d4af37 70%, #f3e8ff 100%);
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff 20%, #d4af37 60%, #fef08a 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.2));
-            animation: parıldama 3s ease-in-out infinite alternate;
+            filter: drop-shadow(0 4px 15px rgba(212, 175, 55, 0.3));
         }
         
         header p { 
-            font-size: 1.3rem; 
+            font-size: 1.25rem; 
             font-weight: 300;
             color: #94a3b8;
             max-width: 800px;
@@ -101,15 +101,13 @@
         
         /* Canlı ve Şeffaf Karşılama Paneli */
         .tanitim-kutusu { 
-            background: rgba(30, 41, 59, 0.4);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            padding: 40px; 
+            background: rgba(26, 29, 38, 0.8);
             border-radius: 20px; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3); 
+            padding: 40px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5); 
             text-align: center; 
             margin-bottom: 50px; 
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.15);
         }
 
         .tanitim-kutusu h2 {
@@ -117,7 +115,6 @@
             font-size: 2rem;
             margin-bottom: 12px;
             font-weight: 700;
-            letter-spacing: -0.5px;
         }
         
         .tanitim-kutusu p {
@@ -127,14 +124,13 @@
             margin: 0 auto;
         }
         
-        /* Neon Detaylı Bölüm Başlıkları */
+        /* Gold Detaylı Bölüm Başlıkları */
         .bolum-basligi { 
             text-align: left; 
             color: #ffffff; 
             font-size: 2.2rem; 
             margin: 60px 0 30px 0; 
             font-weight: 800; 
-            letter-spacing: -0.5px;
             display: flex;
             align-items: center;
             gap: 15px;
@@ -144,10 +140,10 @@
             content: ''; 
             flex: 1;
             height: 2px; 
-            background: linear-gradient(to right, #d4af37, rgba(30, 144, 255, 0.2), transparent); 
+            background: linear-gradient(to right, #d4af37, transparent); 
         }
         
-        /* Grid ve Muazzam Glow (Işıltı) Kart Sistemi */
+        /* Grid ve Muazzam 3 Boyutlu Kart Sistemi */
         .galeri-alani { 
             display: grid; 
             grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); 
@@ -156,22 +152,21 @@
         }
         
         .galeri-karti { 
-            background: #111827; 
+            background: #161920; 
             border-radius: 20px; 
             overflow: hidden; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
             display: flex; 
             flex-direction: column; 
-            border: 1px solid rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            position: relative;
         }
         
         /* Fare üzerine geldiğinde harika canlanma efekti */
         .galeri-karti:hover { 
             transform: translateY(-10px) scale(1.02);
-            border-color: rgba(212, 175, 55, 0.5);
-            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
+            border-color: #d4af37;
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
         }
         
         .galeri-karti img, .galeri-karti video { 
@@ -180,6 +175,7 @@
             object-fit: cover; 
             background: #000; 
             transition: transform 0.5s ease;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.2);
         }
         
         .galeri-karti:hover img {
@@ -192,10 +188,9 @@
             text-align: center; 
             font-weight: 700; 
             color: #ffffff; 
-            background: linear-gradient(180deg, #1f2937 0%, #111827 100%); 
+            background: #1a1d24; 
             font-size: 1.05rem; 
             border-top: 1px solid rgba(255, 255, 255, 0.05);
-            letter-spacing: 0.3px;
         }
         
         /* Ultra Cazibeli İletişim Butonları */
@@ -235,7 +230,7 @@
         
         /* Parlayan Canlı WhatsApp Butonu */
         .whatsapp-yesil { 
-            background: linear-gradient(135deg, #25d366 0%, #14b8a6 100%); 
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); 
             box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
         }
         .whatsapp-yesil:hover { 
@@ -251,25 +246,19 @@
             box-shadow: 0 20px 40px rgba(220, 39, 67, 0.5);
         }
         
-        /* Şık Koyu Tasarım Footer */
+        /* Şık Tasarım Footer */
         footer { 
-            background: #090d16; 
+            background: #090a0f; 
             color: #64748b; 
             text-align: center; 
             padding: 40px 20px; 
             font-size: 0.95rem; 
             margin-top: 80px; 
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            border-top: 2px solid #d4af37;
         }
 
         footer p strong {
             color: #cbd5e1;
-        }
-
-        /* Başlık Işıldama Animasyonu */
-        @keyframes parıldama {
-            from { filter: drop-shadow(0 4px 10px rgba(212, 175, 55, 0.15)); }
-            to { filter: drop-shadow(0 4px 25px rgba(212, 175, 55, 0.4)); }
         }
 
         /* Telefonlarda Kusursuz Görünüm Uyumu */
@@ -283,7 +272,7 @@
 </head>
 <body>
 
-    <!-- Üst İletişim Bilgileri (Numaranız Tam Oturtuldu) -->
+    <!-- Üst İletişim Bilgileri -->
     <div class="ust-bilgi-bari">
         <div>📍 Konum: Kahramanmaraş ve Çevresi</div>
         <div>📞 Canlı Destek: <a href="tel:+905332506002">+90 (533) 250 60 02</a></div>
@@ -293,3 +282,15 @@
     <!-- Başlık Alanı -->
     <header>
         <h1>Akd Yapı Dekorasyon</h1>
+        <p>Lüks Alçıpan Sistemleri, Modern TV Üniteleri, Ahşap & Polyester Çıta Sanatı</p>
+    </header>
+
+    <div class="ana-kutu">
+        <div class="tanitim-kutusu">
+            <h2>Ustalık ve Estetiğin Buluştuğu Yer</h2>
+            <p>Evlerinize hak ettiği değeri ve lüksü kazandırıyoruz. Salon, koridor ve tavanlarınız için tasarladığımız özel alçıpan modellerini, modern ahşap/polyester duvar çıtalarını aşağıdan ayrı bölümler halinde gururla sunuyoruz.</p>
+        </div>
+
+        <h2 class="bolum-basligi">✨ Seçkin Tasarım Fotoğrafları</h2>
+        
+        <div class="galeri-alani">
