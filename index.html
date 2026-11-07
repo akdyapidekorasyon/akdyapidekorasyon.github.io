@@ -15,12 +15,12 @@
         
         body { 
             background-color: #0b0c10; /* Lüks Asil Siyah */
-            /* Derinlik Hissi Veren 3 Boyutlu Gold Çıta Geometrisi Arka Planı */
+            /* Yaptığınız İşi (Asma Tavan Katmanları ve Çıta Geometrisini) Doğrudan Yansıtan Gelişmiş Arka Plan */
             background-image: 
-                linear-gradient(135deg, rgba(212, 175, 55, 0.02) 25%, transparent 25%), 
-                linear-gradient(225deg, rgba(212, 175, 55, 0.02) 25%, transparent 25%), 
-                linear-gradient(45deg, rgba(212, 175, 55, 0.02) 25%, transparent 25%), 
-                linear-gradient(315deg, rgba(212, 175, 55, 0.02) 25%, #0b0c10 25%);
+                linear-gradient(135deg, rgba(212, 175, 55, 0.05) 25%, transparent 25%), 
+                linear-gradient(225deg, rgba(212, 175, 55, 0.05) 25%, transparent 25%), 
+                linear-gradient(45deg, rgba(212, 175, 55, 0.05) 25%, transparent 25%), 
+                linear-gradient(315deg, rgba(212, 175, 55, 0.05) 25%, #0b0c10 25%);
             background-position: 40px 0, 40px 0, 0 0, 0 0;
             background-size: 80px 80px;
             color: #f1f5f9; 
@@ -111,7 +111,7 @@
         
         .media-item img, .media-item video { width: 100%; height: 250px; object-fit: cover; background: #000; border-bottom: 3px solid #d4af37; }
         
-        /* PARLAK BEYAZ VE NET OKUNUR ALT YAZI STİLİ YAPILDI */
+        /* PARLAK BEYAZ VE NET OKUNUR ORİJİNAL İSİM STİLİ */
         .media-desc { 
             padding: 15px; 
             text-align: center; 
@@ -122,6 +122,7 @@
             letter-spacing: 0.5px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+            word-wrap: break-word;
         }
         
         /* Buton Grubu */
@@ -157,26 +158,16 @@
             <p>Kahramanmaraş ve çevresinde anahtar teslim tadilat, alçıpan, asma tavan işleri, ince boya, özel imalat modern TV üniteleri, ahşap ve polyester çıta çözümlerimizle evlerinize şıklık katıyoruz. Aşağıdan işlerimizi inceleyebilirsiniz.</p>
         </div>
 
-        <!-- ================= FOTOĞRAFLAR BÖLÜMÜ (GERİ GETİRİLDİ) ================= -->
-        <h2 class="bolum-basligi">📸 Fotoğraf Galerimiz</h2>
+        <h2 class="bolum-basligi">🛠️ Çalışmalarımız ve Uygulamalarımız</h2>
         
-        <div class="media-gallery">
-            <div class="media-item"><img src="dosya1.jpg" onerror="this.src='dosya1.JPG'" alt="Akd Yapı"><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
-            <div class="media-item"><img src="dosya2.jpg" onerror="this.src='dosya2.JPG'" alt="Akd Yapı"><div class="media-desc">Koridor Çıta Yapımı Tamamlanmıştır</div></div>
-            <div class="media-item"><img src="dosya3.jpg" onerror="this.src='dosya3.JPG'" alt="Akd Yapı"><div class="media-desc">Asma Tavan Yapı Dekorasyon</div></div>
-            <div class="media-item"><img src="dosya5.jpg" onerror="this.src='dosya5.JPG'" alt="Akd Yapı"><div class="media-desc">Premium Duvar Paneli Çözümümüz</div></div>
-            <div class="media-item"><img src="dosya6.jpg" onerror="this.src='dosya6.JPG'" alt="Akd Yapı"><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
-            <div class="media-item"><img src="dosya8.jpg" onerror="this.src='dosya8.JPG'" alt="Akd Yapı"><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
-            <div class="media-item"><img src="dosya9.jpg" onerror="this.src='dosya9.JPG'" alt="Akd Yapı"><div class="media-desc">Akd Yapı | Premium Dekorasyon İşçiliği</div></div>
-            <div class="media-item"><img src="dosya10.jpg" onerror="this.src='dosya10.JPG'" alt="Akd Yapı"><div class="media-desc">Modern Alçıpan TV Ünitesi Uygulaması</div></div>
-            <div class="media-item"><img src="dosya11.jpg" onerror="this.src='dosya11.JPG'" alt="Akd Yapı"><div class="media-desc">Koridor Çıta Yapımı Tamamlanmıştır</div></div>
-            <div class="media-item"><img src="dosya16.jpg" onerror="this.src='dosya16.JPG'" alt="Akd Yapı"><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
-        </div>
+        <!-- Sınırsız yükleme yapılacak olan otomatik galeri alanı -->
+        <div class="media-gallery" id="canli-otomatik-galeri"></div>
 
-        <!-- ================= VİDEOLAR BÖLÜMÜ ================= -->
-        <h2 class="bolum-basligi">📹 Uygulama Videolarımız</h2>
-
-        <div class="media-gallery">
-            <div class="media-item"><video src="dosya12.mp4" controls preload="metadata"></video><div class="media-desc">Modern Alçıpan TV Ünitesi Uygulaması</div></div>
-            <div class="media-item"><video src="dosya13.mp4" controls preload="metadata"></video><div class="media-desc">Lüks Polyester Çıta Tasarımı</div></div>
-            <div class="media-item"><video src="dosya15.mp4" controls preload="metadata"></video><div class="media-desc">Asma Tavan Yapı Dekorasyon</div></div>
+        <!-- Buton Grubu -->
+        <div class="btn-container">
+            <a href="https://wa.me" class="action-btn whatsapp-btn" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.66.986 3.288 1.487 5.412 1.489 5.372 0 9.743-4.331 9.746-9.655.002-2.58-1.002-5.003-2.827-6.83-1.825-1.826-4.246-2.83-6.833-2.83-5.378 0-9.75 4.331-9.753 9.656-.001 2.128.553 4.209 1.603 5.976l-.998 3.646 3.754-.972zm12.115-4.786c-.33-.165-1.951-.963-2.253-1.073-.302-.11-.522-.165-.742.165-.22.33-.853 1.073-1.046 1.293-.193.22-.385.247-.715.083-.33-.165-1.393-.513-2.653-1.637-1.012-.903-1.694-2.02-1.892-2.352-.198-.33-.02-.508.145-.672.148-.148.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.413-.028-.578-.083-.165-.742-1.79-.1017-2.42-.268-.646-.535-.558-.742-.569-.214-.01-.458-.012-.702-.012s-.641.092-.977.458c-.336.366-1.282 1.254-1.282 3.054 0 1.8 1.308 3.54 1.492 3.787.183.247 2.575 3.934 6.237 5.517.872.377 1.554.602 2.084.771.875.279 1.672.24 2.302.146.703-.106 1.951-.798 2.225-1.529.275-.732.275-1.359.192-1.488-.084-.13-.303-.213-.633-.378z"/></svg>
+                WhatsApp ile İletişime Geç
+            </a>
+            <a href="https://instagram.com" class="action-btn instagram-btn" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
