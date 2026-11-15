@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -41,10 +40,6 @@
     }
     </script>
 
-    <script type="application/ld+json">
-    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hangi bölgelerde çalışıyorsunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kahramanmaraş merkez ve çevre illerde, ayrıca Antalya ve Alanya'da çalışıyoruz. Bölgenizi telefonla ya da WhatsApp'tan yazmanız yeterli."}}, {"@type": "Question", "name": "Hangi işleri yapıyorsunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Alçıpan ve asma tavan, modern TV ünitesi, polyester ve ahşap çıta, duvar çerçeve ve lambri, boya ve anahtar teslim tadilat işlerini yapıyoruz."}}, {"@type": "Question", "name": "Fiyat nasıl belirleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Fiyat; mekânın ölçüsüne, seçilen malzemeye ve tasarıma göre değişir. Mekânınızın fotoğrafını ve ölçüsünü gönderirseniz size net bilgi veririz."}}, {"@type": "Question", "name": "Teklif almak için ne yapmalıyım?", "acceptedAnswer": {"@type": "Answer", "text": "Bizi arayabilir, WhatsApp'tan yazabilir ya da sayfadaki Hızlı Teklif formunu doldurabilirsiniz. Form mesajınızı WhatsApp'ta hazır açar."}}, {"@type": "Question", "name": "Yaptığınız işleri nereden görebilirim?", "acceptedAnswer": {"@type": "Answer", "text": "Sayfadaki Çalışmalarımız bölümünde gerçek uygulamalarımızın fotoğraf ve videoları var. Instagram'da @akdyapidekorasyon hesabımızı da takip edebilirsiniz."}}]}
-    </script>
-
     <script>document.documentElement.className = 'js';</script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,8 +57,8 @@
         .sayfa-arka { position: fixed; inset: 0; z-index: -1; background: radial-gradient(ellipse at 20% 15%, rgba(212,175,55,0.30) 0%, transparent 55%), radial-gradient(ellipse at 85% 85%, rgba(168,128,31,0.28) 0%, transparent 50%), repeating-linear-gradient(115deg, rgba(212,175,55,0.07) 0 2px, transparent 2px 46px), linear-gradient(160deg, #15161c 0%, #0b0c10 60%, #1a1508 100%); }
         .sayfa-slides { position: absolute; inset: 0; }
         .slayt { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transform: scale(1); transition: opacity 1.8s ease, transform 10s linear; }
-        .slayt.aktif { opacity: 1; transform: scale(1.12); }
-        .sayfa-kaplama { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,12,16,0.38) 0%, rgba(11,12,16,0.48) 50%, rgba(11,12,16,0.76) 100%); }
+        .slayt.aktif { opacity: 1; transform: scale(1.06); }
+        .sayfa-kaplama { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,12,16,0.30) 0%, rgba(11,12,16,0.40) 50%, rgba(11,12,16,0.72) 100%); }
 
         /* ===== Üst çubuk ===== */
         .ust-bilgi-bari { background: rgba(11,12,16,0.85); backdrop-filter: blur(8px); color: #94a3b8; padding: 12px 20px; font-size: .9rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-bottom: 2px solid var(--altin); position: sticky; top: 0; z-index: 1000; }
@@ -87,7 +82,8 @@
         .btn.yesil { background: linear-gradient(135deg, #25d366, #128c7e); }
         .btn.cerceve { background: rgba(11,12,16,0.6); border: 1px solid var(--altin); color: #fff; backdrop-filter: blur(4px); }
         .btn svg { width: 22px; height: 22px; fill: currentColor; }
-        .sayilar { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 34px; }
+        .sayilar { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 18px; }
+        #sayilar-sabit { margin-top: 34px; }
         .sayilar[hidden] { display: none; }
         .sayi-kutu { min-width: 150px; padding: 12px 22px; border-radius: 14px; background: rgba(11,12,16,0.6); border: 1px solid rgba(212,175,55,0.5); backdrop-filter: blur(4px); }
         .sayi-kutu strong { display: block; font-size: 2rem; line-height: 1.1; color: var(--altin-acik); font-weight: 800; }
@@ -167,7 +163,7 @@
 
         /* ===== Dikkat çeken efektler ===== */
         .ilerleme { position: fixed; top: 0; left: 0; height: 4px; width: 0; z-index: 3000; background: linear-gradient(90deg, var(--altin-koyu), var(--altin-acik), #fff, var(--altin-acik)); box-shadow: 0 0 12px rgba(244,211,107,0.9); }
-        header h1 { background-size: 220% 100%; animation: kayan 5s linear infinite; }
+        header h1 { background-size: 100% 100%; animation: none; }
         @keyframes kayan { 0% { background-position: 0% 50%; } 100% { background-position: 220% 50%; } }
         .kivilcimlar { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
         .kivilcim { position: absolute; bottom: -12px; border-radius: 50%; background: radial-gradient(circle, #fff 0%, var(--altin-acik) 40%, transparent 70%); opacity: 0; animation: yuksel linear infinite; }
@@ -199,6 +195,70 @@
 
         /* ===== Başlık yazı tipi ===== */
         header h1 { font-family: 'Cinzel', 'Times New Roman', Georgia, serif; font-weight: 800; letter-spacing: 4px; line-height: 1.15; font-size: clamp(2rem, 7vw, 4.4rem); }
+
+        /* ===== Teklif sihirbazı ===== */
+        .sihirbaz { max-width: 820px; margin: 0 auto; }
+        .sh-ust { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-weight: 700; color: var(--altin-acik); font-size: .9rem; }
+        .sh-cubuk { height: 8px; border-radius: 999px; background: rgba(255,255,255,0.12); overflow: hidden; margin-bottom: 26px; }
+        .sh-cubuk span { display: block; height: 100%; width: 25%; border-radius: 999px; background: linear-gradient(90deg, var(--altin-koyu), var(--altin-acik)); box-shadow: 0 0 12px rgba(244,211,107,0.7); transition: width .45s ease; }
+        .sh-adim { display: none; animation: sh-gir .4s ease; }
+        .sh-adim.aktif { display: block; }
+        @keyframes sh-gir { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
+        .sh-adim h3 { text-align: center; color: #fff; font-size: 1.35rem; margin-bottom: 4px; }
+        .sh-adim .sh-ipucu { text-align: center; color: #cbd5e1; font-size: .9rem; margin-bottom: 20px; }
+        .sh-secenekler { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+        .sh-sec { text-align: left; cursor: pointer; padding: 16px 16px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.18); background: rgba(22,25,32,0.88); color: #fff; font-size: 1rem; font-weight: 700; transition: all .25s ease; display: flex; align-items: center; gap: 10px; }
+        .sh-sec:hover { border-color: var(--altin); transform: translateY(-2px); }
+        .sh-sec.secili { border-color: var(--altin-acik); background: linear-gradient(135deg, rgba(244,211,107,0.28), rgba(168,128,31,0.28)); box-shadow: 0 0 0 2px rgba(244,211,107,0.45); }
+        .sh-sec.secili::after { content: '\2713'; margin-left: auto; color: var(--altin-acik); font-weight: 800; }
+        .sh-gezin { display: flex; justify-content: space-between; gap: 12px; margin-top: 26px; }
+        .sh-gezin .btn { padding: 13px 26px; }
+        .sh-gezin .btn[hidden] { display: none; }
+        .sh-hata { text-align: center; color: #fca5a5; font-weight: 700; min-height: 1.4em; margin-top: 12px; }
+
+        /* ===== Kayan yazı bandı ===== */
+        .bant-kap { overflow: hidden; padding: 26px 0; }
+        .bant { background: linear-gradient(90deg, var(--altin-koyu), var(--altin-acik) 50%, var(--altin-koyu)); transform: rotate(-1.6deg); margin: 0 -20px; padding: 14px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.55); overflow: hidden; }
+        .bant-yol { display: flex; width: max-content; animation: bant-kay 32s linear infinite; }
+        .bant-yol span { font-family: 'Cinzel', Georgia, serif; font-weight: 800; font-size: clamp(1.05rem, 2.6vw, 1.5rem); letter-spacing: 3px; color: #111; padding: 0 22px; white-space: nowrap; }
+        .bant-yol i { font-style: normal; color: #111; opacity: .6; align-self: center; }
+        @keyframes bant-kay { to { transform: translateX(-50%); } }
+        @media (prefers-reduced-motion: reduce) { .bant-yol { animation: none; } }
+
+        /* ===== Bento hizmet kutuları ===== */
+        .bento { grid-template-columns: repeat(3, 1fr); counter-reset: bk; }
+        .bento .kutu { position: relative; overflow: hidden; counter-increment: bk; padding-top: 34px; }
+        .bento .kutu::before { content: '0' counter(bk); position: absolute; right: 16px; top: 4px; font-family: 'Cinzel', Georgia, serif; font-weight: 800; font-size: 4rem; line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(212,175,55,0.38); pointer-events: none; }
+        .bento .kutu:nth-child(1), .bento .kutu:nth-child(4), .bento .kutu:nth-child(6) { grid-column: span 2; background: linear-gradient(135deg, rgba(40,34,14,0.92), rgba(22,25,32,0.92)); }
+        .bento .kutu:nth-child(1) h3, .bento .kutu:nth-child(4) h3, .bento .kutu:nth-child(6) h3 { font-size: 1.4rem; }
+        @media (max-width: 860px) { .bento { grid-template-columns: 1fr; } .bento .kutu:nth-child(n) { grid-column: auto; } }
+
+        /* ===== İmleç ışığı ===== */
+        .imlec { position: fixed; left: 0; top: 0; width: 460px; height: 460px; margin: -230px 0 0 -230px; border-radius: 50%; background: radial-gradient(circle, rgba(244,211,107,0.20) 0%, transparent 65%); pointer-events: none; z-index: 5; mix-blend-mode: screen; opacity: 0; transition: opacity .4s ease; will-change: transform; }
+
+        /* ===== Son işler şeridi ===== */
+        .serit-bolum { padding: 34px 0 6px; }
+        .serit-bolum[hidden] { display: none; }
+        .serit-baslik { text-align: center; color: #fff; font-size: clamp(1.4rem, 3.4vw, 1.9rem); font-weight: 800; margin-bottom: 18px; text-shadow: 0 2px 12px rgba(0,0,0,0.95); }
+        .serit { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+        .serit-yol { display: flex; width: max-content; animation: serit-kay 55s linear infinite; }
+        .serit:hover .serit-yol { animation-play-state: paused; }
+        @keyframes serit-kay { to { transform: translateX(-50%); } }
+        .serit-oge { flex: 0 0 auto; width: 240px; height: 170px; margin-right: 14px; border-radius: 14px; overflow: hidden; border: 1px solid rgba(212,175,55,0.6); box-shadow: 0 10px 24px rgba(0,0,0,0.5); cursor: zoom-in; background: #000; position: relative; }
+        .serit-oge img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+        .serit-oge:hover img { transform: scale(1.08); }
+        @media (prefers-reduced-motion: reduce) { .serit { overflow-x: auto; } .serit-yol { animation: none; } }
+        @media (max-width: 768px) { .serit-oge { width: 190px; height: 140px; } }
+
+        /* ===== Büyük görüntüleyici: video da oynar ===== */
+        #buyuk video { max-width: 100%; max-height: 100%; border-radius: 8px; background: #000; }
+        #buyuk video[hidden], #buyuk img[hidden] { display: none; }
+
+        /* ===== Usta ===== */
+        .usta-kutu { max-width: 760px; margin: 0 auto; text-align: center; }
+        .usta-kutu p { color: #e2e8f0; margin-bottom: 14px; font-size: 1.05rem; }
+        .usta-imza { font-weight: 800; font-size: 1.3rem !important; color: var(--altin-acik) !important; margin-top: 18px; }
+        .usta-imza span { display: block; font-size: .9rem; font-weight: 600; color: #cbd5e1; }
 
         /* ===== Menü ===== */
         .menu { display: flex; gap: 8px; justify-content: safe center; overflow-x: auto; padding: 10px 14px; background: rgba(11,12,16,0.7); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(212,175,55,0.35); scrollbar-width: none; }
@@ -272,7 +332,122 @@
             .sabit-bar .sb-wp { background: linear-gradient(135deg, #25d366, #128c7e); }
             body { padding-bottom: 72px; }
         }
-    </style>
+    
+        /* ===== SADE TASARIM ===== */
+        body { padding-top: 0; }
+        .ust { position: sticky; top: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 22px; background: rgba(11,12,16,0.82); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(212,175,55,0.45); }
+        .marka { font-family: 'Cinzel', Georgia, serif; font-weight: 800; letter-spacing: 2px; color: var(--altin-acik); text-decoration: none; font-size: 1.05rem; }
+        .ust nav { display: flex; align-items: center; gap: 6px; }
+        .ust nav a { text-decoration: none; color: #e2e8f0; font-weight: 600; font-size: .95rem; padding: 8px 14px; border-radius: 999px; }
+        .ust nav a:hover { color: var(--altin-acik); }
+        .ust .ara-dugme { background: linear-gradient(135deg, var(--altin-acik), var(--altin) 55%, var(--altin-koyu)); color: #111 !important; font-weight: 800 !important; }
+        header.hero { min-height: 0; padding: 84px 20px 70px; }
+        .hero .ust-yazi { color: var(--altin-acik); font-weight: 700; letter-spacing: 3px; text-transform: uppercase; font-size: .85rem; margin-bottom: 14px; }
+        .hero p.slogan { max-width: 640px; margin: 0 auto; }
+        .hero .btnler { margin-top: 28px; }
+        .bolum { padding-top: 26px; padding-bottom: 0; }
+        .cam { animation: none; padding: 30px 24px; }
+        .alt-yazi { margin: 12px auto 24px; }
+        .hz-izgara { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+        .hz { cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 18px 18px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.12); background: rgba(22,25,32,0.88); color: #fff; font-size: 1rem; font-weight: 700; text-align: left; transition: all .25s ease; }
+        .hz span { font-size: 1.5rem; }
+        .hz:hover { border-color: var(--altin); transform: translateY(-3px); color: var(--altin-acik); }
+        .hakkimda { max-width: 680px; margin: 0 auto; text-align: center; font-size: 1.1rem; color: #e2e8f0; }
+        .hakkimda strong { color: var(--altin-acik); }
+        footer { margin-top: 40px; }
+        @media (max-width: 768px) {
+            .ust nav a:not(.ara-dugme) { display: none; }
+            .ust { padding: 10px 14px; }
+            .marka { font-size: .95rem; }
+            header.hero { padding: 56px 16px 50px; }
+            .hz-izgara { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .hz { padding: 14px 12px; font-size: .92rem; gap: 8px; }
+            .hz span { font-size: 1.25rem; }
+            .bolum { padding: 18px 12px 0; }
+            .cam { padding: 22px 14px; }
+        }
+        
+        /* ===== Sayfalar ===== */
+        a.hz { text-decoration: none; }
+        header.hero.kucuk { padding: 52px 16px 34px; }
+        .hero.kucuk h1 { font-size: clamp(1.8rem, 5vw, 3rem); }
+        .medya-izgara { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 22px; }
+        .medya-kart { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 34px 16px; border-radius: 18px; text-decoration: none; color: #fff; background: linear-gradient(135deg, rgba(40,34,14,0.92), rgba(22,25,32,0.92)); border: 1px solid rgba(212,175,55,0.5); transition: all .3s ease; text-align: center; }
+        .medya-kart:hover { transform: translateY(-5px); border-color: var(--altin-acik); box-shadow: 0 14px 30px rgba(212,175,55,0.25); }
+        .medya-kart span { font-size: 2.6rem; }
+        .medya-kart strong { font-size: 1.4rem; color: var(--altin-acik); }
+        .medya-kart small { color: #cbd5e1; font-size: .95rem; min-height: 1.4em; }
+        .alt-iletisim { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; margin-bottom: 14px; }
+        .alt-iletisim a { color: var(--altin-acik); text-decoration: none; font-weight: 700; }
+        .alt-iletisim a:hover { text-decoration: underline; }
+        .iletisim-kisa { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 22px; }
+        @media (max-width: 768px) { .medya-izgara { gap: 10px; } .medya-kart { padding: 26px 10px; } .medya-kart span { font-size: 2.1rem; } .medya-kart strong { font-size: 1.15rem; } }
+
+        /* ===== V2: sinematik tasarım ===== */
+        :root { color-scheme: dark; }
+        @view-transition { navigation: auto; }
+        header.hero { min-height: 100vh; min-height: 100svh; padding: 110px 20px 96px; border-bottom: 0; }
+        header.hero::before { background: radial-gradient(ellipse at center, rgba(8,9,12,0.28) 0%, rgba(8,9,12,0.62) 100%); }
+        .hero h1 { font-size: clamp(2.1rem, 8.6vw, 6.8rem); line-height: 1.04; letter-spacing: .05em; background: none; -webkit-text-fill-color: initial; filter: drop-shadow(0 8px 34px rgba(0,0,0,0.85)); animation: none; text-transform: uppercase; }
+        .kelime { display: inline-block; overflow: hidden; vertical-align: top; padding: 0 .05em .1em; }
+        .kelime > span { display: inline-block; transform: translateY(118%); animation: yuk 1.05s cubic-bezier(.2,.8,.2,1) forwards; animation-delay: calc(var(--i) * .15s + .15s); background: linear-gradient(180deg, #ffffff 8%, var(--altin-acik) 58%, var(--altin) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
+        @keyframes yuk { to { transform: none; } }
+        .gir { opacity: 0; transform: translateY(18px); animation: gir-yukari .9s ease forwards; animation-delay: .75s; }
+        .hero .ust-yazi.gir { animation-delay: .05s; }
+        @keyframes gir-yukari { to { opacity: 1; transform: none; } }
+        .hero p.slogan { font-size: clamp(1.05rem, 2.6vw, 1.45rem); max-width: 680px; }
+        .kaydir-ipucu { position: absolute; bottom: 24px; left: 50%; width: 2px; height: 48px; margin-left: -1px; background: linear-gradient(var(--altin-acik), transparent); transform-origin: top; animation: ipucu 2.2s ease-in-out infinite; }
+        @keyframes ipucu { 0%, 100% { transform: scaleY(.25); opacity: .4; } 50% { transform: scaleY(1); opacity: 1; } }
+        .hero.kucuk { min-height: 0; padding: 70px 16px 40px; }
+        header.hero.kucuk h1 { font-size: clamp(2rem, 7vw, 3.6rem); }
+        .istatistik { display: grid; grid-template-columns: repeat(3, 1fr); max-width: 860px; margin: -44px auto 0; position: relative; z-index: 2; border: 1px solid rgba(212,175,55,0.5); border-radius: 22px; background: rgba(10,11,14,0.82); backdrop-filter: blur(12px); overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        .istatistik div { padding: 22px 8px; text-align: center; border-right: 1px solid rgba(212,175,55,0.25); }
+        .istatistik div:last-child { border-right: 0; }
+        .istatistik strong { display: block; font-family: 'Cinzel', Georgia, serif; font-size: clamp(1.7rem, 6vw, 2.8rem); line-height: 1.1; color: var(--altin-acik); }
+        .istatistik span { font-size: .82rem; color: #cbd5e1; letter-spacing: 1px; text-transform: uppercase; }
+        @media (max-width: 768px) { .istatistik { margin: -34px 14px 0; } .istatistik div { padding: 16px 4px; } }
+        .cam { background: rgba(10,11,14,0.62); border: 1px solid rgba(255,255,255,0.09); border-radius: 28px; box-shadow: none; backdrop-filter: blur(10px); }
+        .baslik-b { letter-spacing: .02em; }
+        .medya-kart { position: relative; min-height: 230px; justify-content: flex-end; background-size: cover; background-position: center; overflow: hidden; }
+        .medya-kart span, .medya-kart strong, .medya-kart small { position: relative; text-shadow: 0 2px 14px rgba(0,0,0,0.9); }
+
+        /* galeri: sinematik kartlar */
+        .galeri { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+        .kart { display: block; aspect-ratio: 4 / 5; border-radius: 22px; border: 1px solid rgba(255,255,255,0.09); background: #0c0d11; cursor: zoom-in; position: relative; overflow: hidden; }
+        .kart:hover { transform: translateY(-4px); border-color: var(--altin); }
+        .kart .gorsel { position: absolute; inset: 0; background: #0c0d11; }
+        .kart img, .kart video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; cursor: inherit; transition: transform .8s cubic-bezier(.2,.8,.2,1); }
+        .kart:hover img, .kart:hover video { transform: scale(1.07); }
+        .kart::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.86)); }
+        .kart .baslik { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; background: none; text-align: left; padding: 20px 16px 16px; font-size: 1.05rem; letter-spacing: .3px; text-shadow: 0 2px 12px rgba(0,0,0,0.9); }
+        .kart .oynat { position: absolute; top: 12px; left: 12px; z-index: 3; padding: 5px 12px; border-radius: 999px; font-size: .78rem; font-weight: 800; letter-spacing: 1px; background: rgba(10,11,14,0.72); border: 1px solid var(--altin); color: var(--altin-acik); backdrop-filter: blur(6px); }
+        .kart .iste { position: absolute; top: 12px; right: 12px; z-index: 3; display: none; padding: 8px 14px; border-radius: 999px; font-size: .8rem; background: rgba(10,11,14,0.75); border: 1px solid var(--altin); color: var(--altin-acik); backdrop-filter: blur(6px); }
+        @media (hover: hover) { .kart .iste { display: inline-flex; opacity: 0; transition: opacity .3s ease; } .kart:hover .iste { opacity: 1; } }
+        @media (max-width: 768px) { .galeri { grid-template-columns: repeat(2, 1fr); gap: 10px; } .kart { border-radius: 16px; } .kart .baslik { font-size: .88rem; padding: 14px 10px 10px; } }
+        .lb-iste { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); z-index: 3; padding: 12px 26px; border-radius: 999px; font-weight: 800; text-decoration: none; color: #111; background: linear-gradient(135deg, var(--altin-acik), var(--altin) 55%, var(--altin-koyu)); box-shadow: 0 8px 26px rgba(0,0,0,0.6); white-space: nowrap; }
+        #buyuk img, #buyuk video { max-height: calc(100% - 70px); }
+        @media (prefers-reduced-motion: reduce) { .kelime > span { animation: none; transform: none; } .gir { animation: none; opacity: 1; transform: none; } .kaydir-ipucu { animation: none; } }
+        </style>
+
+<style id="elit">
+#ilerleme{position:fixed;top:0;left:0;height:3px;width:0;z-index:9999;background:linear-gradient(90deg,#8a6d1c,#f3d77a,#d4af37);box-shadow:0 0 12px rgba(212,175,55,.8);pointer-events:none}
+body::after{content:'';position:fixed;inset:-50%;z-index:1;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.baslik-b{font-family:'Cinzel',Georgia,serif;text-transform:uppercase;letter-spacing:.14em;font-weight:700;background:linear-gradient(180deg,#fff 10%,#f3d77a 60%,#d4af37);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;position:relative;padding-bottom:18px}
+.baslik-b::after{content:'';display:block;width:64px;height:2px;margin:14px auto 0;background:linear-gradient(90deg,transparent,#d4af37,transparent)}
+.cam{position:relative;overflow:hidden}
+.cam::before{content:'';position:absolute;left:12%;right:12%;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(243,215,122,.9),transparent)}
+.kart,.medya-kart,.bolge-kart,[data-sehir]{--mx:50%;--my:50%}
+.kart::before,.medya-kart::before,[data-sehir]::before{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;opacity:0;transition:opacity .35s;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(243,215,122,.22),transparent 60%)}
+.kart:hover::before,.medya-kart:hover::before,[data-sehir]:hover::before{opacity:1}
+[data-sehir]{position:relative;overflow:hidden}
+a[href^="tel:"],a[href*="wa.me"],button[type=submit],.lb-iste{position:relative;overflow:hidden}
+a[href^="tel:"]::after,a[href*="wa.me"]::after,button[type=submit]::after{content:'';position:absolute;top:0;left:-70%;width:45%;height:100%;transform:skewX(-20deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);animation:parla 4.5s ease-in-out infinite}
+@keyframes parla{0%,60%{left:-70%}100%{left:130%}}
+.istatistik strong{text-shadow:0 0 28px rgba(212,175,55,.45)}
+html{scroll-behavior:smooth}
+::selection{background:#d4af37;color:#111}
+@media (prefers-reduced-motion:reduce){a[href^="tel:"]::after,a[href*="wa.me"]::after,button[type=submit]::after{animation:none;display:none}}
+</style>
 </head>
 <body>
 
@@ -281,67 +456,61 @@
         <symbol id="ik-ig" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></symbol>
     </svg>
 
-    <div class="ilerleme" id="ilerleme"></div>
-
     <div class="sayfa-arka" aria-hidden="true">
         <div class="sayfa-slides" id="sayfa-slides"></div>
         <div class="sayfa-kaplama"></div>
     </div>
 
-    <div class="ust-bilgi-bari">
-        <div>📍 Kahramanmaraş &bull; Çevre İller &bull; Antalya &bull; Alanya</div>
-        <div>📞 Bize Ulaşın: <a href="tel:+905332506002">0533 250 60 02</a></div>
-        <div>📸 Instagram: <a href="https://instagram.com/akdyapidekorasyon" target="_blank" rel="noopener">@akdyapidekorasyon</a></div>
+    <div class="ust">
+        <a class="marka" href="index.html">AKD YAPI</a>
+        <nav>
+            <a href="index.html" style="color:var(--altin-acik)">Ana Sayfa</a>
+            <a href="fotograflar.html">Fotoğraflar</a>
+            <a href="videolar.html">Videolar</a>
+            <a href="index.html#iletisim">İletişim</a>
+            <a class="ara-dugme" href="tel:+905332506002">Ara</a>
+        </nav>
     </div>
 
-    <nav class="menu" aria-label="Sayfa menüsü">
-        <a href="#hizmetler">Hizmetler</a><a href="#bolgeler">Bölgeler</a><a href="#calismalar">Çalışmalar</a><a href="#once-sonra" id="menu-os" hidden>Önce / Sonra</a><a href="#sss">Sorular</a><a href="#teklif">Teklif Al</a><a href="#iletisim">İletişim</a>
-    </nav>
-
-    <header>
-        <div class="kivilcimlar" id="kivilcimlar" aria-hidden="true"></div>
+    <header class="hero">
         <div class="hero-icerik">
-            <div class="rozet">Kahramanmaraş &bull; Antalya &bull; Alanya</div>
-            <h1>Akd Yapı Dekorasyon</h1>
-            <div class="cizgi"></div>
-            <p class="slogan">Kahramanmaraş merkez ve çevre illerde, Antalya ve Alanya'da Alçıpan, Asma Tavan, Modern TV Üniteleri &amp; Polyester Çıta Tasarımları</p>
-            <div class="donen" aria-hidden="true"><span id="donen-yazi">Alçıpan &amp; Asma Tavan</span></div>
-            <div class="etiketler">
-                <span>Alçıpan &amp; Asma Tavan</span>
-                <span>Modern TV Ünitesi</span>
-                <span>Polyester &amp; Ahşap Çıta</span>
-                <span>Boya</span>
-                <span>Anahtar Teslim Tadilat</span>
-            </div>
-            <div class="btnler">
-                <a class="btn altin" href="tel:+905332506002">📞 Hemen Ara</a>
-                <a class="btn yesil" href="https://wa.me/905332506002?text=Merhaba%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
-                <a class="btn cerceve" href="#teklif">Hızlı Teklif Al</a>
-            </div>
-            <div class="sayilar" id="sayilar" hidden>
-                <div class="sayi-kutu"><strong id="sayi-calisma">0</strong><span>Paylaşılan Çalışma</span></div>
-                <div class="sayi-kutu" id="kutu-kat"><strong id="sayi-kat">0</strong><span>Çalışma Kategorisi</span></div>
+            <p class="ust-yazi gir">Kahramanmaraş &bull; Antalya &bull; Alanya</p>
+            <h1 aria-label="Akd Yapı Dekorasyon"><span class="kelime"><span style="--i:0">Akd</span></span> <span class="kelime"><span style="--i:1">Yapı</span></span> <span class="kelime"><span style="--i:2">Dekorasyon</span></span></h1>
+            <div class="cizgi gir"></div>
+            <p class="slogan gir">Alçıpan, asma tavan, TV ünitesi, çıta ve boya. 13 yıllık tecrübeyle anahtar teslim.</p>
+            <div class="btnler gir">
+                <a class="btn altin" href="#medya">Çalışmalarımızı Gör</a>
+                <a class="btn cerceve" href="tel:+905332506002">📞 Hemen Ara</a>
             </div>
         </div>
+        <div class="kaydir-ipucu" aria-hidden="true"></div>
     </header>
 
-    <!-- HİZMETLER -->
-    <section class="bolum gizli" id="hizmetler">
+    <div class="istatistik gizli" id="istatistik">
+        <div><strong data-say="13">13</strong><span>Yıl Tecrübe</span></div>
+        <div><strong data-say="3">3</strong><span>Bölge</span></div>
+        <div><strong data-say="6">6</strong><span>Hizmet</span></div>
+    </div>
+
+    <!-- KAYAN BANT -->
+    <div class="bant-kap" aria-hidden="true">
+        <div class="bant"><div class="bant-yol">
+            <span>ALÇIPAN</span><i>✦</i><span>ASMA TAVAN</span><i>✦</i><span>TV ÜNİTESİ</span><i>✦</i><span>POLYESTER ÇITA</span><i>✦</i><span>AHŞAP ÇITA</span><i>✦</i><span>BOYA</span><i>✦</i><span>TADİLAT</span><i>✦</i>
+            <span>ALÇIPAN</span><i>✦</i><span>ASMA TAVAN</span><i>✦</i><span>TV ÜNİTESİ</span><i>✦</i><span>POLYESTER ÇITA</span><i>✦</i><span>AHŞAP ÇITA</span><i>✦</i><span>BOYA</span><i>✦</i><span>TADİLAT</span><i>✦</i>
+        </div></div>
+    </div>
+
+
+    <section class="bolum gizli" id="medya">
         <div class="cam">
-            <h2 class="baslik-b">Hizmetlerimiz</h2>
-            <p class="alt-yazi">Evinizin ve iş yerinizin her köşesi için, mekâna özel tasarım ve uygulama.</p>
-            <div class="izgara">
-                <div class="kutu"><div class="ikon">🏠</div><h3>Alçıpan &amp; Asma Tavan</h3><p>Modern asma tavan, gizli LED aydınlatma ve alçıpan uygulamaları.</p><button type="button" class="ornek" data-anahtar="tavan|alcipan|alçıpan">Örnekleri gör</button></div>
-                <div class="kutu"><div class="ikon">📺</div><h3>Modern TV Ünitesi</h3><p>Mekâna göre özel imalat TV üniteleri ve TV arkası panel çözümleri.</p><button type="button" class="ornek" data-anahtar="tv|ünite|unite">Örnekleri gör</button></div>
-                <div class="kutu"><div class="ikon">✨</div><h3>Polyester &amp; Ahşap Çıta</h3><p>Duvarlarda şık görünüm veren çıta uygulamaları, altın detaylı tasarımlar.</p><button type="button" class="ornek" data-anahtar="çıta|cita">Örnekleri gör</button></div>
-                <div class="kutu"><div class="ikon">🖼️</div><h3>Duvar Çerçeve &amp; Lambri</h3><p>Klasik alçı çerçeve, lambri ve PVC panel ile zenginleşen duvarlar.</p><button type="button" class="ornek" data-anahtar="lambri|çerçeve|cerceve|pvc">Örnekleri gör</button></div>
-                <div class="kutu"><div class="ikon">🎨</div><h3>Boya &amp; Dekorasyon</h3><p>Düzgün yüzey için boya ve dekoratif uygulamalar.</p><button type="button" class="ornek" data-anahtar="boya">Örnekleri gör</button></div>
-                <div class="kutu"><div class="ikon">🔑</div><h3>Anahtar Teslim Tadilat</h3><p>Tadilattan teslime kadar tüm süreç tek elden yürütülür.</p><button type="button" class="ornek" data-anahtar="tadilat">Örnekleri gör</button></div>
+            <h2 class="baslik-b">Çalışmalarımız</h2>
+            <div class="medya-izgara">
+                <a class="medya-kart" id="kart-foto" href="fotograflar.html"><span>📷</span><strong>Fotoğraflar</strong><small id="say-foto">&nbsp;</small></a>
+                <a class="medya-kart" id="kart-video" href="videolar.html"><span>🎬</span><strong>Videolar</strong><small id="say-video">&nbsp;</small></a>
             </div>
         </div>
     </section>
 
-    <!-- HİZMET BÖLGELERİ -->
     <section class="bolum gizli" id="bolgeler">
         <div class="cam">
             <h2 class="baslik-b">Hizmet Bölgelerimiz</h2>
@@ -354,199 +523,114 @@
         </div>
     </section>
 
-    <!-- ÇALIŞMALAR -->
-    <section class="bolum gizli" id="calismalar">
+
+    <section class="bolum gizli" id="hakkimda">
         <div class="cam">
-            <h2 class="baslik-b">🛠️ Çalışmalarımız</h2>
-            <p class="alt-yazi">Gerçek uygulamalarımızdan fotoğraf ve videolar. İstediğiniz işi seçip inceleyin.</p>
-            <div class="filtreler" id="filtreler"></div>
-            <div class="galeri" id="galeri-alani"><div class="mesaj">Çalışmalar yükleniyor...</div></div>
-            <div class="daha-fazla-kutu"><button type="button" id="daha-fazla" class="btn altin daha-fazla" hidden>Daha Fazla Göster</button></div>
+            <p class="hakkimda">13 yaşımdan beri bu işin içindeyim. Kahramanmaraş merkez ve çevre illerde, Antalya ve Alanya'da çalışıyorum. Sitedeki işlerin hepsi kendi yaptıklarımdır.<br><strong>Mevlüt Akdere</strong></p>
         </div>
     </section>
 
-    <!-- ÖNCE / SONRA -->
-    <section class="bolum gizli" id="once-sonra" hidden>
-        <div class="cam">
-            <h2 class="baslik-b">Önce / Sonra</h2>
-            <p class="alt-yazi">Çizgiyi sağa sola sürükleyin, değişimi kendi gözlerinizle görün.</p>
-            <div class="os-izgara" id="os-izgara"></div>
-        </div>
-    </section>
-
-    <!-- SÜREÇ -->
-    <section class="bolum gizli" id="surec">
-        <div class="cam">
-            <h2 class="baslik-b">Nasıl Çalışıyoruz?</h2>
-            <p class="alt-yazi">Basit ve net bir süreç.</p>
-            <div class="izgara">
-                <div class="kutu"><div class="adim-no">1</div><h3>Bize Ulaşın</h3><p>Telefon ya da WhatsApp'tan ihtiyacınızı ve mekânınızı anlatın.</p></div>
-                <div class="kutu"><div class="adim-no">2</div><h3>Planlama</h3><p>İsteğinize ve mekâna göre tasarım ve uygulama planı hazırlanır.</p></div>
-                <div class="kutu"><div class="adim-no">3</div><h3>Uygulama</h3><p>İşiniz özenle ve planlanan sürede uygulanır.</p></div>
-                <div class="kutu"><div class="adim-no">4</div><h3>Teslim</h3><p>Sonucu birlikte kontrol eder, anahtar teslim ederiz.</p></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEDEN BİZ -->
-    <section class="bolum gizli" id="neden">
-        <div class="cam">
-            <h2 class="baslik-b">Neden Akd Yapı Dekorasyon?</h2>
-            <p class="alt-yazi">Mekânınıza özel çözüm, net iletişim, tek elden iş.</p>
-            <div class="izgara">
-                <div class="kutu"><div class="ikon">📐</div><h3>Mekâna Özel</h3><p>Her işi mekânın ölçüsüne ve isteğinize göre tasarlarız.</p></div>
-                <div class="kutu"><div class="ikon">🔑</div><h3>Tek Elden Teslim</h3><p>Alçıpandan boyaya kadar işin tamamı bir ekipte toplanır.</p></div>
-                <div class="kutu"><div class="ikon">📸</div><h3>Gerçek İşler</h3><p>Sitedeki fotoğraf ve videolar kendi uygulamalarımızdır.</p></div>
-                <div class="kutu"><div class="ikon">📞</div><h3>Direkt Ulaşım</h3><p>Usta Mevlüt Akdere ile doğrudan telefon ve WhatsApp'tan görüşün.</p></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SIK SORULANLAR -->
-    <section class="bolum gizli" id="sss">
-        <div class="cam">
-            <h2 class="baslik-b">Sık Sorulan Sorular</h2>
-            <p class="alt-yazi">Aklınıza takılanlar için kısa cevaplar.</p>
-            <div class="sss-liste">
-                <details class="sss"><summary>Hangi bölgelerde çalışıyorsunuz?</summary><p>Kahramanmaraş merkez ve çevre illerde, ayrıca Antalya ve Alanya'da çalışıyoruz. Bölgenizi telefonla ya da WhatsApp'tan yazmanız yeterli.</p></details>
-                <details class="sss"><summary>Hangi işleri yapıyorsunuz?</summary><p>Alçıpan ve asma tavan, modern TV ünitesi, polyester ve ahşap çıta, duvar çerçeve ve lambri, boya ve anahtar teslim tadilat işlerini yapıyoruz.</p></details>
-                <details class="sss"><summary>Fiyat nasıl belirleniyor?</summary><p>Fiyat; mekânın ölçüsüne, seçilen malzemeye ve tasarıma göre değişir. Mekânınızın fotoğrafını ve ölçüsünü gönderirseniz size net bilgi veririz.</p></details>
-                <details class="sss"><summary>Teklif almak için ne yapmalıyım?</summary><p>Bizi arayabilir, WhatsApp'tan yazabilir ya da sayfadaki Hızlı Teklif formunu doldurabilirsiniz. Form mesajınızı WhatsApp'ta hazır açar.</p></details>
-                <details class="sss"><summary>Yaptığınız işleri nereden görebilirim?</summary><p>Sayfadaki Çalışmalarımız bölümünde gerçek uygulamalarımızın fotoğraf ve videoları var. Instagram'da @akdyapidekorasyon hesabımızı da takip edebilirsiniz.</p></details>
-            </div>
-        </div>
-    </section>
-
-    <!-- YORUMLAR -->
-    <section class="bolum gizli" id="yorumlar">
-        <div class="cam">
-            <h2 class="baslik-b">Müşteri Yorumları</h2>
-            <div class="yorum-kutu">
-                <div class="yildiz" aria-hidden="true">★★★★★</div>
-                <p>Müşterilerimizin yorumlarını Google'da okuyabilirsiniz. Bizimle çalıştıysanız siz de yorumunuzu yazarak diğer müşterilere yardımcı olabilirsiniz.</p>
-                <a class="btn altin" href="https://share.google/66F5fbCq540AWOro9" target="_blank" rel="noopener">⭐ Google'da Yorumları Gör</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEKLİF FORMU -->
     <section class="bolum gizli" id="teklif">
         <div class="cam">
             <h2 class="baslik-b">Hızlı Teklif ve Bilgi</h2>
-            <p class="alt-yazi">Formu doldurun, mesajınız WhatsApp'ta hazır şekilde açılsın. Tek dokunuşla bize gönderin.</p>
-            <form id="teklif-formu" autocomplete="off">
-                <div class="form-izgara">
-                    <div class="alan"><label for="f-ad">Adınız Soyadınız</label><input id="f-ad" type="text" placeholder="Örn: Ahmet Yılmaz" required></div>
-                    <div class="alan"><label for="f-sehir">Bulunduğunuz Bölge</label>
-                        <select id="f-sehir"><option>Kahramanmaraş</option><option>Çevre İller</option><option>Antalya / Alanya</option><option>Diğer</option></select></div>
-                    <div class="alan"><label for="f-hizmet">İstediğiniz İş</label>
-                        <select id="f-hizmet"><option>Alçıpan / Asma Tavan</option><option>Modern TV Ünitesi</option><option>Polyester / Ahşap Çıta</option><option>Duvar Çerçeve / Lambri</option><option>Boya</option><option>Anahtar Teslim Tadilat</option><option>Diğer</option></select></div>
-                    <div class="alan tam"><label for="f-not">Notunuz (isteğe bağlı)</label><textarea id="f-not" placeholder="Mekânınız, ölçüler, istekleriniz..."></textarea></div>
-                </div>
-                <div class="form-alt">
-                    <button type="submit" class="btn yesil">WhatsApp'tan Gönder</button>
-                    <p class="form-not">Bu form mesajı WhatsApp'ta açar, siz gönder tuşuna basana kadar hiçbir şey gönderilmez.</p>
+            <p class="alt-yazi">Birkaç soruyu cevaplayın, mesajınız WhatsApp'ta hazır açılsın. Tek dokunuşla bize gönderin.</p>
+            <form id="teklif-formu" autocomplete="off" novalidate>
+                <div class="sihirbaz">
+                    <div class="sh-ust"><span id="sh-yazi">Adım 1 / 4</span><span>Yaklaşık 30 saniye</span></div>
+                    <div class="sh-cubuk"><span id="sh-bar"></span></div>
+
+                    <div class="sh-adim aktif" data-adim="1">
+                        <h3>Hangi işi yaptırmak istiyorsunuz?</h3>
+                        <p class="sh-ipucu">Birden fazla seçebilirsiniz.</p>
+                        <div class="sh-secenekler" data-grup="is" data-coklu="1">
+                            <button type="button" class="sh-sec">🏠 Alçıpan / Asma Tavan</button>
+                            <button type="button" class="sh-sec">📺 Modern TV Ünitesi</button>
+                            <button type="button" class="sh-sec">✨ Polyester / Ahşap Çıta</button>
+                            <button type="button" class="sh-sec">🖼️ Duvar Çerçeve / Lambri</button>
+                            <button type="button" class="sh-sec">🎨 Boya</button>
+                            <button type="button" class="sh-sec">🔑 Anahtar Teslim Tadilat</button>
+                        </div>
+                    </div>
+
+                    <div class="sh-adim" data-adim="2">
+                        <h3>Hangi mekân için?</h3>
+                        <p class="sh-ipucu">Birini seçin.</p>
+                        <div class="sh-secenekler" data-grup="mekan">
+                            <button type="button" class="sh-sec">🛋️ Salon</button>
+                            <button type="button" class="sh-sec">🛏️ Yatak Odası</button>
+                            <button type="button" class="sh-sec">🧒 Çocuk Odası</button>
+                            <button type="button" class="sh-sec">🍽️ Mutfak</button>
+                            <button type="button" class="sh-sec">🏢 İş Yeri / Ofis</button>
+                            <button type="button" class="sh-sec">🏡 Tüm Ev</button>
+                        </div>
+                    </div>
+
+                    <div class="sh-adim" data-adim="3">
+                        <h3>Mekân ne kadar büyük?</h3>
+                        <p class="sh-ipucu">Yaklaşık bir fikir yeterli.</p>
+                        <div class="sh-secenekler" data-grup="buyukluk">
+                            <button type="button" class="sh-sec">Küçük (1 oda)</button>
+                            <button type="button" class="sh-sec">Orta (2-3 oda)</button>
+                            <button type="button" class="sh-sec">Büyük (4 oda ve üstü)</button>
+                            <button type="button" class="sh-sec">Bilmiyorum, görerek karar verelim</button>
+                        </div>
+                    </div>
+
+                    <div class="sh-adim" data-adim="4">
+                        <h3>Son adım: sizi tanıyalım</h3>
+                        <p class="sh-ipucu">Mesajınız WhatsApp'ta hazır açılır, siz gönder tuşuna basana kadar hiçbir şey gönderilmez.</p>
+                        <div class="form-izgara">
+                            <div class="alan"><label for="f-ad">Adınız Soyadınız</label><input id="f-ad" type="text" placeholder="Örn: Ahmet Yılmaz"></div>
+                            <div class="alan"><label for="f-sehir">Bulunduğunuz Bölge</label>
+                                <select id="f-sehir"><option>Kahramanmaraş</option><option>Çevre İller</option><option>Antalya / Alanya</option><option>Diğer</option></select></div>
+                            <div class="alan tam"><label for="f-not">Notunuz (isteğe bağlı)</label><textarea id="f-not" placeholder="İstekleriniz, ölçüler, özel bir fikriniz varsa yazın..."></textarea></div>
+                        </div>
+                    </div>
+
+                    <div class="sh-hata" id="sh-hata" role="alert"></div>
+                    <div class="sh-gezin">
+                        <button type="button" class="btn cerceve" id="sh-geri" hidden>← Geri</button>
+                        <button type="button" class="btn altin" id="sh-ileri" style="margin-left:auto">Devam →</button>
+                        <button type="submit" class="btn yesil" id="sh-gonder" hidden style="margin-left:auto">WhatsApp'tan Gönder</button>
+                    </div>
                 </div>
             </form>
         </div>
     </section>
 
-    <!-- İLETİŞİM -->
-    <section class="bolum gizli" id="iletisim">
-        <div class="cam">
-            <h2 class="baslik-b">Hayalinizdeki Mekânı Birlikte Yapalım</h2>
-            <p class="alt-yazi">Alçıpan, asma tavan, TV ünitesi, çıta ve boya işleri için Mevlüt Akdere'yi arayın ya da yazın.</p>
-            <div class="iletisim-kartlar">
-                <a class="iletisim-kart ara" href="tel:+905332506002"><span class="ikon-yuvarlak">📞</span><small>Hemen Arayın</small><strong>0533 250 60 02</strong></a>
-                <a class="iletisim-kart wp" href="https://wa.me/905332506002?text=Merhaba%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="ikon-yuvarlak"><svg aria-hidden="true"><use href="#ik-wp"/></svg></span><small>WhatsApp'tan Yazın</small><strong>0533 250 60 02</strong></a>
-                <a class="iletisim-kart ig" href="https://instagram.com/akdyapidekorasyon" target="_blank" rel="noopener"><span class="ikon-yuvarlak"><svg aria-hidden="true"><use href="#ik-ig"/></svg></span><small>Instagram'da Takip Edin</small><strong>@akdyapidekorasyon</strong></a>
-            </div>
-            <div class="harita-kutu">
-                <a class="btn cerceve" href="https://share.google/66F5fbCq540AWOro9" target="_blank" rel="noopener">📍 Google Haritalar'da Bizi Bulun</a>
-            </div>
-            <div class="konum">📍 Kahramanmaraş &bull; Çevre İller &bull; Antalya &bull; Alanya &bull; Anahtar teslim</div>
-        </div>
-    </section>
 
-    <footer>
-        <div>&copy; <span id="yil"></span> Akd Yapı Dekorasyon | Usta: Mevlüt Akdere | Kahramanmaraş, Çevre İller, Antalya ve Alanya</div>
-        <div style="margin-top:8px">📞 <a href="tel:+905332506002">0533 250 60 02</a> &nbsp;|&nbsp; 📸 <a href="https://instagram.com/akdyapidekorasyon" target="_blank" rel="noopener">@akdyapidekorasyon</a></div>
+
+
+    <footer id="iletisim">
+        <div class="alt-iletisim">
+            <a href="tel:+905332506002">📞 Ara</a>
+            <a href="https://wa.me/905332506002?text=Merhaba%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://instagram.com/akdyapidekorasyon" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://share.google/66F5fbCq540AWOro9" target="_blank" rel="noopener">Google Haritalar</a>
+        </div>
+        <div>&copy; <span id="yil"></span> Akd Yapı Dekorasyon &bull; Mevlüt Akdere</div>
     </footer>
 
-    <a class="yuzen-wp" href="https://wa.me/905332506002?text=Merhaba%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile yazın"><svg aria-hidden="true"><use href="#ik-wp"/></svg></a>
-
     <div class="sabit-bar">
-        <a class="sb-ara" href="tel:+905332506002">📞 Hemen Ara</a>
+        <a class="sb-ara" href="tel:+905332506002">📞 Ara</a>
         <a class="sb-wp" href="https://wa.me/905332506002?text=Merhaba%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a>
     </div>
-
-    <div id="buyuk" role="dialog" aria-label="Büyük fotoğraf"><button type="button" class="ok geri" aria-label="Önceki">&#8249;</button><img alt=""><button type="button" class="ok ileri" aria-label="Sonraki">&#8250;</button></div>
-
-    <button type="button" class="yukari" id="yukari" aria-label="Yukarı çık">&#8593;</button>
 
     <script>
     (function () {
         document.getElementById('yil').textContent = new Date().getFullYear();
 
-        /* ================= AYARLAR ================= */
         var KULLANICI = 'akdyapidekorasyon';
         var DEPO      = 'akdyapidekorasyon.github.io';
-        var WHATSAPP  = '905332506002';
         var ANA_KLASOR = 'medya';
-        var SAYFA_BOYUTU = 12;
-
-        // Klasör adı -> sitede görünecek isim (listede olmayan klasör adı da otomatik düzeltilir)
-        var KATEGORI_ADLARI = {
-            'asma-tavan': 'Asma Tavan', 'alcipan': 'Alçıpan', 'tv-unitesi': 'TV Ünitesi',
-            'tv-arkasi': 'TV Arkası Panel', 'polyester-cita': 'Polyester Çıta', 'ahsap-cita': 'Ahşap Çıta',
-            'cita': 'Çıta Çalışmaları', 'lambri': 'Lambri', 'pvc-panel': 'PVC Panel',
-            'duvar-alcisi': 'Duvar Alçı Çerçeve', 'ince-boya': 'Boya', 'boya': 'Boya', 'led-aydinlatma': 'LED Aydınlatma',
-            'tadilat': 'Anahtar Teslim Tadilat', 'mutfak': 'Mutfak', 'banyo': 'Banyo', 'koridor': 'Koridor'
-        };
-        var DIGER_AD = 'Diğer Çalışmalar';
+        var WHATSAPP  = '905332506002';
         var GIZLE = ['logo.png', 'favicon.png', 'favicon.ico', 'og-image.jpg', 'paylasim.jpg'];
-        var BASLIKLAR = {};   // (isteğe bağlı) 'dosya-adi.mp4': 'Başlık'
-        /* ============================================ */
-
         var VIDEO = ['mp4', 'webm', 'm4v', 'mov'];
         var FOTO  = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
 
-        var galeri = document.getElementById('galeri-alani');
-        var filtreAlani = document.getElementById('filtreler');
-        var dahaFazla = document.getElementById('daha-fazla');
-        var buyuk = document.getElementById('buyuk');
-        var buyukImg = buyuk.querySelector('img');
-        var tumOgeler = [], osOgeler = [], filtre = 'hepsi', gosterilen = SAYFA_BOYUTU;
-        var lbListe = [], lbSira = 0;
-
         function uzanti(ad) { return ad.split('.').pop().toLowerCase(); }
         function kodla(yol) { return yol.split('/').map(encodeURIComponent).join('/'); }
-        function ilkHarfBuyut(t) { return t.charAt(0).toLocaleUpperCase('tr') + t.slice(1); }
 
-        function kategoriAdi(slug) {
-            if (KATEGORI_ADLARI[slug]) { return KATEGORI_ADLARI[slug]; }
-            var TR = { 'cita': 'Çıta', 'citasi': 'Çıtası', 'unite': 'Ünite', 'unitesi': 'Ünitesi', 'uniteleri': 'Üniteleri',
-                'alcipan': 'Alçıpan', 'alci': 'Alçı', 'ahsap': 'Ahşap', 'ince': 'İnce', 'aydinlatma': 'Aydınlatma',
-                'tasarim': 'Tasarım', 'odasi': 'Odası', 'cocuk': 'Çocuk', 'ic': 'İç', 'mekan': 'Mekân', 'kapi': 'Kapı',
-                'tv': 'TV', 'pvc': 'PVC', 'led': 'LED', 'cerceve': 'Çerçeve', 'isler': 'İşler', 'calismalar': 'Çalışmalar' };
-            return slug.replace(/[-_]+/g, ' ').trim().split(' ').map(function (k) { return TR[k.toLowerCase()] || ilkHarfBuyut(k); }).join(' ');
-        }
-
-        function dosyaBasligi(ad, tur) {
-            if (BASLIKLAR[ad]) { return BASLIKLAR[ad]; }
-            var s = ad.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' ').replace(/\s+/g, ' ').trim();
-            if (/^(img|vid|video|dsc|pxl|mov|whatsapp|screenshot|dosya|resim|foto|image)?\s*[\d\s().-]*$/i.test(s) || /^whatsapp/i.test(s) || s.length < 3) {
-                return tur === 'video' ? 'Çalışma Videosu' : 'Çalışma Fotoğrafı';
-            }
-            return ilkHarfBuyut(s);
-        }
-
-        function mesajYaz(metin) {
-            galeri.innerHTML = '';
-            var d = document.createElement('div'); d.className = 'mesaj'; d.textContent = metin; galeri.appendChild(d);
-        }
-
-        /* ---- GitHub'dan dosya listesi (tek istek) ---- */
         function agaciAl() {
             try { var o = JSON.parse(sessionStorage.getItem('akd_agac')); if (o && Date.now() - o.t < 300000) { return Promise.resolve(o.v); } } catch (e) {}
             var dallar = ['HEAD', 'main', 'master'];
@@ -563,228 +647,31 @@
             });
         }
 
-        function ogeleriHazirla(tree) {
-            var liste = [];
-            tree.forEach(function (t) {
-                if (t.type !== 'blob') { return; }
-                var parca = t.path.split('/'), ad = parca[parca.length - 1], u = uzanti(ad);
-                var tur = VIDEO.indexOf(u) > -1 ? 'video' : (FOTO.indexOf(u) > -1 ? 'foto' : null);
-                if (!tur || GIZLE.indexOf(ad.toLowerCase()) > -1) { return; }
-                var kat = (parca[0] === ANA_KLASOR && parca.length >= 3) ? parca[1] : null;
-                if (kat === 'once-sonra' && tur === 'foto') { osOgeler.push({ yol: kodla(t.path), ad: ad }); return; }
-                liste.push({ yol: kodla(t.path), ad: ad, tur: tur, kat: kat, katAdi: kat ? kategoriAdi(kat) : DIGER_AD });
-            });
-            liste.sort(function (a, b) {
-                if (a.katAdi !== b.katAdi) {
-                    if (a.katAdi === DIGER_AD) { return 1; }
-                    if (b.katAdi === DIGER_AD) { return -1; }
-                    return a.katAdi.localeCompare(b.katAdi, 'tr');
-                }
-                return a.ad.localeCompare(b.ad, 'tr', { numeric: true });
-            });
-            return liste;
-        }
-
-        function filtreleriCiz() {
-            var sayac = {}, sira = [];
-            tumOgeler.forEach(function (o) { if (!sayac[o.katAdi]) { sayac[o.katAdi] = 0; sira.push(o.katAdi); } sayac[o.katAdi]++; });
-            filtreAlani.innerHTML = '';
-            if (sira.length < 2) { return; }
-            function dugme(etiket, deger, adet) {
-                var b = document.createElement('button');
-                b.type = 'button'; b.className = 'filtre' + (filtre === deger ? ' aktif' : ''); b.textContent = etiket;
-                var k = document.createElement('small'); k.textContent = '(' + adet + ')'; b.appendChild(k);
-                b.addEventListener('click', function () { filtre = deger; gosterilen = SAYFA_BOYUTU; filtreleriCiz(); galeriyiCiz(); });
-                filtreAlani.appendChild(b);
-            }
-            dugme('Tümü', 'hepsi', tumOgeler.length);
-            sira.forEach(function (ad) { dugme(ad, ad, sayac[ad]); });
-        }
-
-        function kartYap(o) {
-            var kart = document.createElement('div'); kart.className = 'kart';
-            var baslik = BASLIKLAR[o.ad] || (o.kat ? o.katAdi : dosyaBasligi(o.ad, o.tur));
-            var el, sar = document.createElement('div'); sar.className = 'gorsel';
-            if (o.tur === 'video') {
-                el = document.createElement('video'); el.src = o.yol; el.controls = true; el.preload = 'metadata';
-                el.setAttribute('playsinline', ''); el.setAttribute('aria-label', baslik);
-            } else {
-                el = document.createElement('img'); el.src = o.yol; el.alt = baslik; el.loading = 'lazy';
-                el.addEventListener('click', function () { lbAc(o.yol, baslik); });
-            }
-            sar.appendChild(el);
-            var b = document.createElement('div'); b.className = 'baslik';
-            b.textContent = (o.kat && o.tur === 'video') ? baslik + ' • Video' : baslik;
-            var w = document.createElement('a'); w.className = 'iste'; w.target = '_blank'; w.rel = 'noopener';
-            var mesaj = 'Merhaba, sitenizdeki "' + baslik + '" çalışmasını beğendim. Benzerini yaptırmak istiyorum, bilgi alabilir miyim?';
-            w.href = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(mesaj);
-            w.textContent = 'Bunu istiyorum';
-            kart.appendChild(sar); kart.appendChild(b); kart.appendChild(w);
-            return kart;
-        }
-
-        function galeriyiCiz() {
-            var liste = tumOgeler.filter(function (o) { return filtre === 'hepsi' || o.katAdi === filtre; });
-            lbListe = liste.filter(function (o) { return o.tur === 'foto'; });
-            galeri.innerHTML = '';
-            if (!liste.length) { mesajYaz('Yakında yeni çalışmalarımız burada olacak.'); dahaFazla.hidden = true; return; }
-            liste.slice(0, gosterilen).forEach(function (o) { galeri.appendChild(kartYap(o)); });
-            dahaFazla.hidden = liste.length <= gosterilen;
-        }
-        dahaFazla.addEventListener('click', function () { gosterilen += SAYFA_BOYUTU; galeriyiCiz(); });
-
-        /* ---- Tüm sayfa arka planı: iş fotoğrafları yavaşça döner ---- */
         function arkaPlanBaslat(fotolar) {
             var alan = document.getElementById('sayfa-slides');
             if (!alan || !fotolar.length) { return; }
             var k = fotolar.slice().sort(function () { return Math.random() - 0.5; }).slice(0, 8);
-            var slaytlar = k.map(function (d) {
-                var s = document.createElement('div'); s.className = 'slayt';
-                s.style.backgroundImage = 'url("' + d.yol + '")'; alan.appendChild(s); return s;
+            var sl = k.map(function (d) { var x = document.createElement('div'); x.className = 'slayt'; x.setAttribute('data-yol', d.yol); alan.appendChild(x); return x; });
+            function yukle(x) { if (x && !x.style.backgroundImage) { x.style.backgroundImage = 'url("' + x.getAttribute('data-yol') + '")'; } }
+            var i = 0; yukle(sl[0]); sl[0].classList.add('aktif'); yukle(sl[1]);
+            if (sl.length < 2) { return; }
+            setInterval(function () { sl[i].classList.remove('aktif'); i = (i + 1) % sl.length; yukle(sl[i]); sl[i].classList.add('aktif'); yukle(sl[(i + 1) % sl.length]); }, 6500);
+        }
+
+        /* sayılar yukarı sayar */
+        var ist = document.getElementById('istatistik');
+        function sayiAnim() {
+            Array.prototype.forEach.call(ist.querySelectorAll('[data-say]'), function (el) {
+                var hedef = Number(el.getAttribute('data-say')), t0 = null;
+                function adim(t) { if (t0 === null) { t0 = t; } var o = Math.min(1, (t - t0) / 1200); el.textContent = Math.round(hedef * (1 - Math.pow(1 - o, 3))); if (o < 1) { requestAnimationFrame(adim); } }
+                el.textContent = '0'; requestAnimationFrame(adim);
             });
-            var i = 0; slaytlar[0].classList.add('aktif');
-            if (slaytlar.length < 2) { return; }
-            setInterval(function () { slaytlar[i].classList.remove('aktif'); i = (i + 1) % slaytlar.length; slaytlar[i].classList.add('aktif'); }, 6000);
+        }
+        if (ist && 'IntersectionObserver' in window) {
+            var io2 = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) { sayiAnim(); io2.disconnect(); } }); }, { threshold: 0.5 });
+            io2.observe(ist);
         }
 
-        /* ---- Gerçek sayılar (yüklenen dosyalardan) ---- */
-        function say(el, hedef) {
-            var b = 0, adim = Math.max(1, Math.ceil(hedef / 30));
-            var t = setInterval(function () { b += adim; if (b >= hedef) { b = hedef; clearInterval(t); } el.textContent = b; }, 35);
-        }
-        function sayilariGoster() {
-            if (!tumOgeler.length) { return; }
-            var katlar = {}; tumOgeler.forEach(function (o) { if (o.kat) { katlar[o.katAdi] = 1; } });
-            var kn = Object.keys(katlar).length;
-            document.getElementById('sayilar').hidden = false;
-            say(document.getElementById('sayi-calisma'), tumOgeler.length);
-            if (kn > 0) { say(document.getElementById('sayi-kat'), kn); } else { document.getElementById('kutu-kat').style.display = 'none'; }
-        }
-
-        /* ---- Büyük fotoğraf (ileri / geri) ---- */
-        var okGeri = buyuk.querySelector('.geri'), okIleri = buyuk.querySelector('.ileri');
-        function lbGoster() {
-            var o = lbListe[lbSira]; if (!o) { return; }
-            buyukImg.src = o.yol; buyukImg.alt = o.katAdi;
-            okGeri.hidden = okIleri.hidden = lbListe.length < 2;
-        }
-        function lbAc(yol) {
-            lbSira = 0;
-            for (var i = 0; i < lbListe.length; i++) { if (lbListe[i].yol === yol) { lbSira = i; break; } }
-            lbGoster(); buyuk.classList.add('acik');
-        }
-        function lbGit(y) { if (lbListe.length < 2) { return; } lbSira = (lbSira + y + lbListe.length) % lbListe.length; lbGoster(); }
-        function lbKapat() { buyuk.classList.remove('acik'); buyukImg.src = ''; }
-        buyuk.addEventListener('click', function (e) { if (e.target === okGeri) { lbGit(-1); } else if (e.target === okIleri) { lbGit(1); } else { lbKapat(); } });
-        document.addEventListener('keydown', function (e) {
-            if (!buyuk.classList.contains('acik')) { return; }
-            if (e.key === 'Escape') { lbKapat(); } else if (e.key === 'ArrowLeft') { lbGit(-1); } else if (e.key === 'ArrowRight') { lbGit(1); }
-        });
-        var dokX = null;
-        buyuk.addEventListener('touchstart', function (e) { dokX = e.touches[0].clientX; }, { passive: true });
-        buyuk.addEventListener('touchend', function (e) {
-            if (dokX === null) { return; }
-            var fark = e.changedTouches[0].clientX - dokX; dokX = null;
-            if (Math.abs(fark) > 50) { lbGit(fark < 0 ? 1 : -1); }
-        }, { passive: true });
-
-        /* ---- Önce / Sonra (medya/once-sonra klasörü: ad-once.jpg + ad-sonra.jpg) ---- */
-        function duzle(t) { return t.toLowerCase().replace(/ö/g, 'o').replace(/ı/g, 'i').replace(/ş/g, 's').replace(/ç/g, 'c').replace(/ğ/g, 'g').replace(/ü/g, 'u'); }
-        function onceSonraCiz() {
-            var gruplar = {};
-            osOgeler.forEach(function (o) {
-                var ad = duzle(o.ad).replace(/\.[^.]+$/, '');
-                var m = ad.match(/^(.*?)[-_ ]*(once|oncesi|sonra|sonrasi)$/);
-                if (!m) { return; }
-                var anahtar = m[1] || 'is';
-                if (!gruplar[anahtar]) { gruplar[anahtar] = {}; }
-                gruplar[anahtar][m[2].indexOf('once') === 0 ? 'once' : 'sonra'] = o.yol;
-            });
-            var alan = document.getElementById('os-izgara'), say = 0;
-            Object.keys(gruplar).sort().forEach(function (k) {
-                var g = gruplar[k]; if (!g.once || !g.sonra) { return; }
-                say++;
-                var kart = document.createElement('div'); kart.className = 'os-kart';
-                var os = document.createElement('div'); os.className = 'os';
-                var i1 = document.createElement('img'); i1.src = g.once; i1.alt = 'Önce'; i1.loading = 'lazy';
-                var i2 = document.createElement('img'); i2.src = g.sonra; i2.alt = 'Sonra'; i2.className = 'os-sonra'; i2.loading = 'lazy';
-                var c = document.createElement('div'); c.className = 'cizgi-os';
-                var t = document.createElement('div'); t.className = 'tutac'; t.textContent = '↔';
-                var e1 = document.createElement('span'); e1.className = 'etk sol'; e1.textContent = 'ÖNCE';
-                var e2 = document.createElement('span'); e2.className = 'etk sag'; e2.textContent = 'SONRA';
-                var gir = document.createElement('input'); gir.type = 'range'; gir.min = 0; gir.max = 100; gir.value = 50; gir.setAttribute('aria-label', 'Önce sonra karşılaştırma');
-                gir.addEventListener('input', function () { os.style.setProperty('--x', gir.value + '%'); });
-                [i1, i2, c, t, e1, e2, gir].forEach(function (x) { os.appendChild(x); });
-                var b = document.createElement('div'); b.className = 'baslik'; b.textContent = k === 'is' ? 'Önce / Sonra' : ilkHarfBuyut(k.replace(/[-_]+/g, ' '));
-                kart.appendChild(os); kart.appendChild(b); alan.appendChild(kart);
-            });
-            if (say) { document.getElementById('once-sonra').hidden = false; document.getElementById('menu-os').hidden = false; }
-        }
-
-        /* ---- Yukarı çık ---- */
-        var yukari = document.getElementById('yukari');
-        window.addEventListener('scroll', function () { yukari.classList.toggle('goster', window.scrollY > 700); }, { passive: true });
-        yukari.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
-
-        /* ---- Hizmet kutusu -> o işin örnekleri ---- */
-        Array.prototype.forEach.call(document.querySelectorAll('[data-anahtar]'), function (d) {
-            d.addEventListener('click', function () {
-                var anahtarlar = d.getAttribute('data-anahtar').split('|'), bulunan = null;
-                tumOgeler.forEach(function (o) {
-                    if (bulunan || !o.kat) { return; }
-                    var ad = o.katAdi.toLocaleLowerCase('tr');
-                    anahtarlar.forEach(function (a) { if (!bulunan && ad.indexOf(a) > -1) { bulunan = o.katAdi; } });
-                });
-                filtre = bulunan || 'hepsi'; gosterilen = SAYFA_BOYUTU; filtreleriCiz(); galeriyiCiz();
-                document.getElementById('calismalar').scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-
-        /* ---- Bölge düğmeleri -> forma git ---- */
-        Array.prototype.forEach.call(document.querySelectorAll('[data-sehir]'), function (b) {
-            b.addEventListener('click', function () {
-                document.getElementById('f-sehir').value = b.getAttribute('data-sehir');
-                document.getElementById('teklif').scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-
-        /* ---- Teklif formu -> WhatsApp ---- */
-        document.getElementById('teklif-formu').addEventListener('submit', function (e) {
-            e.preventDefault();
-            var ad = document.getElementById('f-ad').value.trim();
-            var sehir = document.getElementById('f-sehir').value;
-            var hizmet = document.getElementById('f-hizmet').value;
-            var not = document.getElementById('f-not').value.trim();
-            var msg = 'Merhaba, ben ' + ad + '. ' + sehir + ' bölgesinden yazıyorum. "' + hizmet + '" için bilgi ve teklif almak istiyorum.' + (not ? ' Notum: ' + not : '');
-            window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
-        });
-
-        /* ---- Dikkat çeken efektler ---- */
-        (function () {
-            var il = document.getElementById('ilerleme');
-            function ilerle() {
-                var h = document.documentElement.scrollHeight - window.innerHeight;
-                il.style.width = (h > 0 ? Math.min(100, window.scrollY / h * 100) : 0) + '%';
-            }
-            window.addEventListener('scroll', ilerle, { passive: true }); ilerle();
-
-            var kv = document.getElementById('kivilcimlar');
-            for (var i = 0; i < 22; i++) {
-                var k = document.createElement('span'); k.className = 'kivilcim';
-                var b = 4 + Math.random() * 8;
-                k.style.cssText = 'left:' + (Math.random() * 100) + '%;width:' + b + 'px;height:' + b + 'px;animation-duration:' + (6 + Math.random() * 8) + 's;animation-delay:-' + (Math.random() * 12) + 's';
-                kv.appendChild(k);
-            }
-
-            var sozler = ['Alçıpan & Asma Tavan', 'Modern TV Ünitesi', 'Polyester & Ahşap Çıta', 'Boya & Dekorasyon', 'Anahtar Teslim Tadilat'];
-            var y = document.getElementById('donen-yazi'), n = 0;
-            setInterval(function () {
-                y.classList.add('gizle');
-                setTimeout(function () { n = (n + 1) % sozler.length; y.textContent = sozler[n]; y.classList.remove('gizle'); }, 500);
-            }, 2600);
-        })();
-
-        /* ---- Kaydırınca beliren bölümler ---- */
         var gizliler = document.querySelectorAll('.gizli');
         if ('IntersectionObserver' in window) {
             var io = new IntersectionObserver(function (es) {
@@ -795,16 +682,104 @@
             Array.prototype.forEach.call(gizliler, function (g) { g.classList.add('gor'); });
         }
 
-        /* ---- Başlat ---- */
-        agaciAl().then(function (tree) {
-            tumOgeler = ogeleriHazirla(tree);
-            arkaPlanBaslat(tumOgeler.filter(function (o) { return o.tur === 'foto'; }));
-            sayilariGoster(); filtreleriCiz(); galeriyiCiz(); onceSonraCiz();
-        }).catch(function () {
-            mesajYaz('Çalışmalar şu an yüklenemedi. Lütfen birkaç dakika sonra sayfayı yenileyin.');
+        /* ---- Bölge düğmeleri -> forma git ---- */
+        Array.prototype.forEach.call(document.querySelectorAll('[data-sehir]'), function (b) {
+            b.addEventListener('click', function () {
+                document.getElementById('f-sehir').value = b.getAttribute('data-sehir');
+                document.getElementById('teklif').scrollIntoView({ behavior: 'smooth' });
+            });
         });
+
+        /* ---- Teklif sihirbazı -> WhatsApp ---- */
+        (function () {
+            var form = document.getElementById('teklif-formu');
+            var adimlar = form.querySelectorAll('.sh-adim'), toplam = adimlar.length, simdi = 1;
+            var geri = document.getElementById('sh-geri'), ileri = document.getElementById('sh-ileri'), gonder = document.getElementById('sh-gonder');
+            var hata = document.getElementById('sh-hata');
+            var sec = { is: [], mekan: '', buyukluk: '' };
+
+            Array.prototype.forEach.call(form.querySelectorAll('.sh-secenekler'), function (grup) {
+                var ad = grup.getAttribute('data-grup'), coklu = grup.getAttribute('data-coklu') === '1';
+                Array.prototype.forEach.call(grup.querySelectorAll('.sh-sec'), function (d) {
+                    d.addEventListener('click', function () {
+                        var metin = d.textContent.replace(/^[^A-Za-zÇĞİÖŞÜçğıöşü]+/, '').trim();
+                        hata.textContent = '';
+                        if (coklu) {
+                            d.classList.toggle('secili');
+                            var k = sec[ad].indexOf(metin);
+                            if (k > -1) { sec[ad].splice(k, 1); } else { sec[ad].push(metin); }
+                        } else {
+                            Array.prototype.forEach.call(grup.querySelectorAll('.sh-sec'), function (x) { x.classList.remove('secili'); });
+                            d.classList.add('secili'); sec[ad] = metin;
+                            if (simdi < toplam) { setTimeout(function () { git(1); }, 250); }
+                        }
+                    });
+                });
+            });
+
+            function goster() {
+                Array.prototype.forEach.call(adimlar, function (a) { a.classList.toggle('aktif', Number(a.getAttribute('data-adim')) === simdi); });
+                document.getElementById('sh-yazi').textContent = 'Adım ' + simdi + ' / ' + toplam;
+                document.getElementById('sh-bar').style.width = (simdi / toplam * 100) + '%';
+                geri.hidden = simdi === 1; ileri.hidden = simdi === toplam; gonder.hidden = simdi !== toplam;
+                hata.textContent = '';
+            }
+            function tamam() {
+                if (simdi === 1 && !sec.is.length) { hata.textContent = 'Lütfen en az bir iş seçin.'; return false; }
+                if (simdi === 2 && !sec.mekan) { hata.textContent = 'Lütfen bir mekân seçin.'; return false; }
+                if (simdi === 3 && !sec.buyukluk) { hata.textContent = 'Lütfen bir büyüklük seçin.'; return false; }
+                return true;
+            }
+            function git(y) {
+                if (y > 0 && !tamam()) { return; }
+                simdi = Math.max(1, Math.min(toplam, simdi + y)); goster();
+            }
+            ileri.addEventListener('click', function () { git(1); });
+            geri.addEventListener('click', function () { git(-1); });
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var ad = document.getElementById('f-ad').value.trim();
+                if (!ad) { hata.textContent = 'Lütfen adınızı yazın.'; document.getElementById('f-ad').focus(); return; }
+                var sehir = document.getElementById('f-sehir').value;
+                var not = document.getElementById('f-not').value.trim();
+                var msg = 'Merhaba, ben ' + ad + '. ' + sehir + ' bölgesinden yazıyorum.\n' +
+                    'İstediğim iş: ' + sec.is.join(', ') + '\n' +
+                    'Mekân: ' + sec.mekan + '\n' +
+                    'Büyüklük: ' + sec.buyukluk + '\n' +
+                    'Bilgi ve teklif almak istiyorum.' + (not ? '\nNotum: ' + not : '');
+                window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+            });
+            goster();
+        })();
+
+
+        agaciAl().then(function (tree) {
+            var foto = [], video = 0;
+            tree.forEach(function (t) {
+                if (t.type !== 'blob') { return; }
+                var parca = t.path.split('/'), ad = parca[parca.length - 1], u = uzanti(ad);
+                if (GIZLE.indexOf(ad.toLowerCase()) > -1) { return; }
+                var kat = (parca[0] === ANA_KLASOR && parca.length >= 3) ? parca[1] : null;
+                if (FOTO.indexOf(u) > -1) { if (kat !== 'once-sonra') { foto.push({ yol: kodla(t.path) }); } }
+                else if (VIDEO.indexOf(u) > -1) { video++; }
+            });
+            arkaPlanBaslat(foto);
+            function kartResim(id, f) { var el = document.getElementById(id); if (el && f) { el.style.backgroundImage = 'linear-gradient(180deg, rgba(10,11,14,0.15), rgba(10,11,14,0.88)), url("' + f.yol + '")'; } }
+            kartResim('kart-foto', foto[0]); kartResim('kart-video', foto[1] || foto[0]);
+            document.getElementById('say-foto').textContent = foto.length ? foto.length + ' fotoğraf' : '';
+            document.getElementById('say-video').textContent = video ? video + ' video' : '';
+        }).catch(function () {});
     })();
     </script>
+<div id="ilerleme"></div>
+<script>
+(function(){try{
+var b=document.getElementById('ilerleme');
+function g(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?h.scrollTop/m*100:0)+'%'}
+addEventListener('scroll',g,{passive:true});g();
+document.addEventListener('pointermove',function(e){var t=e.target.closest&&e.target.closest('.kart,.medya-kart,[data-sehir]');if(!t)return;var r=t.getBoundingClientRect();t.style.setProperty('--mx',(e.clientX-r.left)+'px');t.style.setProperty('--my',(e.clientY-r.top)+'px')},{passive:true});
+}catch(e){}})();
+</script>
 </body>
 </html>
-```
