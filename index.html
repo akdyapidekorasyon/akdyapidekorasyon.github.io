@@ -541,7 +541,7 @@ html{scroll-behavior:smooth}
                 <span class="os-et sol">ÖNCE</span><span class="os-et sag">TASARIM</span>
                 <input type="range" min="0" max="100" value="50" id="osAralik" aria-label="Önce sonra">
             </div>
-            <div class="os-sekme"><button type="button" class="on" data-k="koridor-gizli-led-asma-tavan">Koridor</button><button type="button" data-k="salon-gizli-led-asma-tavan">Salon</button><button type="button" data-k="alanya-gizli-led-asma-tavan">Alanya</button></div>
+            <div class="os-sekme"><button type="button" class="on" data-k="koridor-gizli-led-asma-tavan">Koridor</button><button type="button" data-k="salon-gizli-led-asma-tavan">Salon</button><button type="button" data-g="1" data-k="alanya-gizli-led-asma-tavan">Alanya</button></div>
             <p class="os-not">Fotoğraflar gerçek işimizdir. Boyalı ve LED ışıklı görünüm tasarım önizlemesidir.</p>
         </div>
     </section>
@@ -837,7 +837,7 @@ var kt=document.getElementById('osKutu');function ar(){if(o.naturalWidth)kt.styl
 r.addEventListener('input',g);g();
 Array.prototype.forEach.call(document.querySelectorAll('.os-sekme button'),function(b){b.addEventListener('click',function(){
 Array.prototype.forEach.call(document.querySelectorAll('.os-sekme button'),function(x){x.classList.remove('on')});b.classList.add('on');
-var k=b.getAttribute('data-k');o.src='once-sonra/'+k+'-once.jpg';u.src='once-sonra/'+k+'-sonra.jpg';r.value=50;g()})});
+var k=b.getAttribute('data-k'),re=b.getAttribute('data-g');o.src='once-sonra/'+k+'-once.jpg';u.src='once-sonra/'+k+(re?'-gercek.jpg':'-sonra.jpg');document.querySelector('.os-et.sag').textContent=re?'BİTMİŞ HALİ':'TASARIM';document.querySelector('.os-not').textContent=re?'Aynı mekân: işin öncesi ve bitmiş hali. Fotoğraflar gerçek işimizdir.':'Fotoğraflar gerçek işimizdir. Boyalı ve LED ışıklı görünüm tasarım önizlemesidir.';r.value=50;g()})});
 }catch(e){}})();
 </script>
 </body>
