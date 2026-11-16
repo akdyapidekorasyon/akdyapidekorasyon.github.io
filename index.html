@@ -454,7 +454,7 @@ html{scroll-behavior:smooth}
 ::selection{background:#d4af37;color:#111}
 @media (prefers-reduced-motion:reduce){a[href^="tel:"]::after,a[href*="wa.me"]::after,button[type=submit]::after{animation:none;display:none}}
 
-.os-bolum .os-kutu{position:relative;max-width:520px;margin:18px auto 0;aspect-ratio:3/4;border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.45);box-shadow:0 20px 60px rgba(0,0,0,.55);touch-action:pan-y;user-select:none}
+.os-bolum .os-kutu{position:relative;max-width:640px;max-height:80vh;margin:18px auto 0;aspect-ratio:3/4;border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.45);box-shadow:0 20px 60px rgba(0,0,0,.55);touch-action:pan-y;user-select:none}
 .os-kutu img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .os-kutu .os-ust{clip-path:inset(0 0 0 50%)}
 .os-kutu .os-cizgi{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#f4d36b;box-shadow:0 0 14px #d4af37;pointer-events:none}
@@ -541,7 +541,7 @@ html{scroll-behavior:smooth}
                 <span class="os-et sol">ÖNCE</span><span class="os-et sag">TASARIM</span>
                 <input type="range" min="0" max="100" value="50" id="osAralik" aria-label="Önce sonra">
             </div>
-            <div class="os-sekme"><button type="button" class="on" data-k="koridor-gizli-led-asma-tavan">Koridor</button><button type="button" data-k="salon-gizli-led-asma-tavan">Salon</button></div>
+            <div class="os-sekme"><button type="button" class="on" data-k="koridor-gizli-led-asma-tavan">Koridor</button><button type="button" data-k="salon-gizli-led-asma-tavan">Salon</button><button type="button" data-k="alanya-gizli-led-asma-tavan">Alanya</button></div>
             <p class="os-not">Fotoğraflar gerçek işimizdir. Boyalı ve LED ışıklı görünüm tasarım önizlemesidir.</p>
         </div>
     </section>
@@ -833,6 +833,7 @@ document.addEventListener('pointermove',function(e){var t=e.target.closest&&e.ta
 var r=document.getElementById('osAralik');if(!r)return;
 var u=document.getElementById('osSonra'),c=document.getElementById('osCizgi'),t=document.querySelector('.os-tut'),o=document.getElementById('osOnce');
 function g(){var v=r.value;u.style.clipPath='inset(0 0 0 '+v+'%)';c.style.left=v+'%';t.style.left=v+'%'}
+var kt=document.getElementById('osKutu');function ar(){if(o.naturalWidth)kt.style.aspectRatio=o.naturalWidth+'/'+o.naturalHeight}o.addEventListener('load',ar);ar();
 r.addEventListener('input',g);g();
 Array.prototype.forEach.call(document.querySelectorAll('.os-sekme button'),function(b){b.addEventListener('click',function(){
 Array.prototype.forEach.call(document.querySelectorAll('.os-sekme button'),function(x){x.classList.remove('on')});b.classList.add('on');
