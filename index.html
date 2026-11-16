@@ -453,6 +453,19 @@ a[href^="tel:"]::after,a[href*="wa.me"]::after,button[type=submit]::after{conten
 html{scroll-behavior:smooth}
 ::selection{background:#d4af37;color:#111}
 @media (prefers-reduced-motion:reduce){a[href^="tel:"]::after,a[href*="wa.me"]::after,button[type=submit]::after{animation:none;display:none}}
+
+.os-bolum .os-kutu{position:relative;max-width:520px;margin:18px auto 0;aspect-ratio:3/4;border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.45);box-shadow:0 20px 60px rgba(0,0,0,.55);touch-action:pan-y;user-select:none}
+.os-kutu img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.os-kutu .os-ust{clip-path:inset(0 0 0 50%)}
+.os-kutu .os-cizgi{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#f4d36b;box-shadow:0 0 14px #d4af37;pointer-events:none}
+.os-kutu .os-tut{position:absolute;top:50%;left:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:#0b0c10;border:2px solid #d4af37;color:#f4d36b;display:flex;align-items:center;justify-content:center;font-weight:700;pointer-events:none}
+.os-kutu input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.os-et{position:absolute;bottom:12px;padding:5px 12px;border-radius:999px;background:rgba(11,12,16,.7);color:#f4d36b;font-size:.78rem;font-weight:700;letter-spacing:1.5px;pointer-events:none}
+.os-et.sol{left:12px}.os-et.sag{right:12px}
+.os-sekme{display:flex;gap:10px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+.os-sekme button{background:transparent;border:1px solid rgba(212,175,55,.5);color:#f4d36b;padding:8px 16px;border-radius:999px;font:inherit;font-size:.9rem;cursor:pointer}
+.os-sekme button.on{background:#d4af37;color:#0b0c10;font-weight:700}
+.os-not{text-align:center;color:#94a3b8;font-size:.8rem;margin-top:10px}
 </style>
 </head>
 <body>
@@ -514,6 +527,22 @@ html{scroll-behavior:smooth}
                 <a class="medya-kart" id="kart-foto" href="fotograflar.html"><span>📷</span><strong>Fotoğraflar</strong><small id="say-foto">&nbsp;</small></a>
                 <a class="medya-kart" id="kart-video" href="videolar.html"><span>🎬</span><strong>Videolar</strong><small id="say-video">&nbsp;</small></a>
             </div>
+        </div>
+    </section>
+
+    <section class="bolum gizli os-bolum" id="once-sonra">
+        <div class="cam">
+            <h2 class="baslik-b">Önce &amp; Sonra</h2>
+            <p class="alt-yazi">Çizgiyi kaydırın: asma tavan işimiz, gizli LED ışıkla nasıl görünür?</p>
+            <div class="os-kutu" id="osKutu">
+                <img id="osOnce" alt="Asma tavan, ışıksız" src="once-sonra/koridor-gizli-led-asma-tavan-once.jpg">
+                <img id="osSonra" class="os-ust" alt="Asma tavan, gizli LED ışıklı" src="once-sonra/koridor-gizli-led-asma-tavan-sonra.jpg">
+                <div class="os-cizgi" id="osCizgi"></div><div class="os-tut">⇄</div>
+                <span class="os-et sol">ÖNCE</span><span class="os-et sag">LED İLE</span>
+                <input type="range" min="0" max="100" value="50" id="osAralik" aria-label="Önce sonra">
+            </div>
+            <div class="os-sekme"><button type="button" class="on" data-k="koridor-gizli-led-asma-tavan">Koridor</button><button type="button" data-k="salon-gizli-led-asma-tavan">Salon</button></div>
+            <p class="os-not">Fotoğraflar gerçek işimizdir. Işıklı görünüm, ışık uygulaması öncesi hazırlanan tasarım önizlemesidir.</p>
         </div>
     </section>
 
@@ -797,6 +826,17 @@ var b=document.getElementById('ilerleme');
 function g(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?h.scrollTop/m*100:0)+'%'}
 addEventListener('scroll',g,{passive:true});g();
 document.addEventListener('pointermove',function(e){var t=e.target.closest&&e.target.closest('.kart,.medya-kart,[data-sehir]');if(!t)return;var r=t.getBoundingClientRect();t.style.setProperty('--mx',(e.clientX-r.left)+'px');t.style.setProperty('--my',(e.clientY-r.top)+'px')},{passive:true});
+}catch(e){}})();
+</script>
+<script>
+(function(){try{
+var r=document.getElementById('osAralik');if(!r)return;
+var u=document.getElementById('osSonra'),c=document.getElementById('osCizgi'),t=document.querySelector('.os-tut'),o=document.getElementById('osOnce');
+function g(){var v=r.value;u.style.clipPath='inset(0 0 0 '+v+'%)';c.style.left=v+'%';t.style.left=v+'%'}
+r.addEventListener('input',g);g();
+Array.prototype.forEach.call(document.querySelectorAll('.os-sekme button'),function(b){b.addEventListener('click',function(){
+Array.prototype.forEach.call(document.querySelectorAll('.os-sekme button'),function(x){x.classList.remove('on')});b.classList.add('on');
+var k=b.getAttribute('data-k');o.src='once-sonra/'+k+'-once.jpg';u.src='once-sonra/'+k+'-sonra.jpg';r.value=50;g()})});
 }catch(e){}})();
 </script>
 </body>
