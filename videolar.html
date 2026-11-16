@@ -423,6 +423,12 @@ a[href^="tel:"],a[href*="wa.me"],button[type=submit],.lb-iste{position:relative;
 a[href^="tel:"]::after,a[href*="wa.me"]::after,button[type=submit]::after{content:'';position:absolute;top:0;left:-70%;width:45%;height:100%;transform:skewX(-20deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);animation:parla 4.5s ease-in-out infinite}
 @keyframes parla{0%,60%{left:-70%}100%{left:130%}}
 .istatistik strong{text-shadow:0 0 28px rgba(212,175,55,.45)}
+.adimlar{list-style:none;margin:22px 0 4px;padding:0;display:grid;gap:12px}
+.adimlar li{display:flex;gap:14px;align-items:center;text-align:left;padding:14px 16px;border:1px solid rgba(212,175,55,.28);border-radius:16px;background:rgba(255,255,255,.03)}
+.adimlar b{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-family:'Cinzel',Georgia,serif;font-size:18px;color:#111;background:linear-gradient(135deg,#f3d77a,#b8922a)}
+.adimlar strong{display:block;color:#f3d77a;font-size:16px;letter-spacing:.04em}
+.adimlar span{display:block;color:rgba(255,255,255,.72);font-size:14px;margin-top:2px}
+@media(min-width:760px){.adimlar{grid-template-columns:repeat(4,1fr)}.adimlar li{flex-direction:column;text-align:center}}
 html{scroll-behavior:smooth}
 ::selection{background:#d4af37;color:#111}
 @media (prefers-reduced-motion:reduce){a[href^="tel:"]::after,a[href*="wa.me"]::after,button[type=submit]::after{animation:none;display:none}}
