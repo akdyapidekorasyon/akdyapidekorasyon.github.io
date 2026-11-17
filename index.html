@@ -352,6 +352,13 @@
         .hz { cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 18px 18px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.12); background: rgba(22,25,32,0.88); color: #fff; font-size: 1rem; font-weight: 700; text-align: left; transition: all .25s ease; }
         .hz span { font-size: 1.5rem; }
         .hz:hover { border-color: var(--altin); transform: translateY(-3px); color: var(--altin-acik); }
+        .hk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0}
+        .hk-grid div{background:rgba(255,255,255,.05);border:1px solid rgba(212,175,55,.35);border-radius:14px;padding:16px 12px;text-align:center}
+        .hk-grid span{display:block;font-size:1.6rem;margin-bottom:4px}
+        .hk-grid strong{display:block;color:var(--altin-acik);font-size:1rem}
+        .hk-grid small{display:block;color:#cbd5e1;font-size:.82rem;margin-top:4px;line-height:1.35}
+        .hk-btn{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+        @media(min-width:700px){.hk-grid{grid-template-columns:repeat(4,1fr)}}
         .hakkimda { max-width: 680px; margin: 0 auto; text-align: center; font-size: 1.1rem; color: #e2e8f0; }
         .hakkimda strong { color: var(--altin-acik); }
         footer { margin-top: 40px; }
@@ -641,7 +648,16 @@ html{scroll-behavior:smooth}
 
     <section class="bolum gizli" id="hakkimda">
         <div class="cam">
-            <p class="hakkimda">13 yaşımdan beri bu işin içindeyim. Kahramanmaraş merkez ve çevre illerde, Antalya ve Alanya'da çalışıyorum. Sitedeki işlerin hepsi kendi yaptıklarımdır.<br><strong>Mevlüt Akdere</strong></p>
+            <h2 class="baslik-b">Hakkımda</h2>
+            <p class="hakkimda">13 yaşımdan beri bu işin içindeyim. Alçıpan, asma tavan ve TV ünitesinden boyaya, seramiğe kadar evinizin ince işlerini, anahtar teslim ve ince işçilikle yapıyorum. Sitedeki işlerin hepsi kendi yaptıklarımdır.</p>
+            <div class="hk-grid">
+                <div><span>🛠️</span><strong>13 Yıllık Emek</strong><small>Küçük yaştan ustalıkla yetiştim</small></div>
+                <div><span>📍</span><strong>Üç Bölge</strong><small>Kahramanmaraş ve çevre iller, Antalya, Alanya</small></div>
+                <div><span>🏠</span><strong>Anahtar Teslim</strong><small>Tek ustayla baştan sona tadilat</small></div>
+                <div><span>✅</span><strong>Gerçek İşler</strong><small>Fotoğraf ve videolar kendi işlerimiz</small></div>
+            </div>
+            <p class="hakkimda"><strong>Mevlüt Akdere</strong><br>Akd Yapı Dekorasyon</p>
+            <div class="hk-btn"><a class="btn altin" href="tel:+905332506002">📞 Hemen Ara</a><a class="btn cerceve" href="https://wa.me/905332506002" target="_blank" rel="noopener">💬 WhatsApp</a></div>
         </div>
     </section>
 
