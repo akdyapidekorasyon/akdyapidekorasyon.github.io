@@ -484,6 +484,7 @@ html{scroll-behavior:smooth}
         <a class="marka" href="index.html">AKD YAPI</a>
         <nav>
             <a href="index.html" style="color:var(--altin-acik)">Ana Sayfa</a>
+            <a href="index.html#hizmetler">Hizmetler</a>
             <a href="fotograflar.html">Fotoğraflar</a>
             <a href="videolar.html">Videolar</a>
             <a href="index.html#iletisim">İletişim</a>
@@ -508,17 +509,57 @@ html{scroll-behavior:smooth}
     <div class="istatistik gizli" id="istatistik">
         <div><strong data-say="13">13</strong><span>Yıl Tecrübe</span></div>
         <div><strong data-say="3">3</strong><span>Bölge</span></div>
-        <div><strong data-say="6">6</strong><span>Hizmet</span></div>
+        <div><strong data-say="10">10</strong><span>Hizmet</span></div>
     </div>
 
     <!-- KAYAN BANT -->
     <div class="bant-kap" aria-hidden="true">
         <div class="bant"><div class="bant-yol">
-            <span>ALÇIPAN</span><i>✦</i><span>ASMA TAVAN</span><i>✦</i><span>TV ÜNİTESİ</span><i>✦</i><span>POLYESTER ÇITA</span><i>✦</i><span>AHŞAP ÇITA</span><i>✦</i><span>BOYA</span><i>✦</i><span>TADİLAT</span><i>✦</i>
-            <span>ALÇIPAN</span><i>✦</i><span>ASMA TAVAN</span><i>✦</i><span>TV ÜNİTESİ</span><i>✦</i><span>POLYESTER ÇITA</span><i>✦</i><span>AHŞAP ÇITA</span><i>✦</i><span>BOYA</span><i>✦</i><span>TADİLAT</span><i>✦</i>
+            <span>SIVA</span><i>✦</i><span>ALÇIPAN</span><i>✦</i><span>ASMA TAVAN</span><i>✦</i><span>BOYA</span><i>✦</i><span>SERAMİK</span><i>✦</i><span>PARKE</span><i>✦</i><span>TV ÜNİTESİ</span><i>✦</i><span>ÇITA</span><i>✦</i><span>LED</span><i>✦</i><span>ANAHTAR TESLİM</span><i>✦</i>
+            <span>SIVA</span><i>✦</i><span>ALÇIPAN</span><i>✦</i><span>ASMA TAVAN</span><i>✦</i><span>BOYA</span><i>✦</i><span>SERAMİK</span><i>✦</i><span>PARKE</span><i>✦</i><span>TV ÜNİTESİ</span><i>✦</i><span>ÇITA</span><i>✦</i><span>LED</span><i>✦</i><span>ANAHTAR TESLİM</span><i>✦</i>
         </div></div>
     </div>
 
+
+
+    <section class="bolum gizli" id="hizmetler">
+        <style>
+        .hz-baslik-alt{text-align:center;max-width:620px;margin:6px auto 26px;color:#cbd5e1;line-height:1.6}
+        .hz-izgara{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:16px}
+        .hz-kart{position:relative;display:block;text-decoration:none;color:#fff;padding:26px 22px 22px;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,rgba(28,31,40,.96),rgba(12,13,17,.98));border:1px solid rgba(212,175,55,.22);box-shadow:0 12px 30px rgba(0,0,0,.35);transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s,box-shadow .35s}
+        .hz-kart::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 85% 0%,rgba(212,175,55,.22),transparent 55%);opacity:0;transition:opacity .4s}
+        .hz-kart:hover{transform:translateY(-6px);border-color:var(--altin);box-shadow:0 18px 40px rgba(212,175,55,.22)}
+        .hz-kart:hover::before{opacity:1}
+        .hz-no{position:absolute;top:10px;right:16px;font-family:'Cinzel',Georgia,serif;font-size:2.6rem;font-weight:700;color:rgba(212,175,55,.16);line-height:1}
+        .hz-ikon{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:16px;font-size:1.7rem;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.45);box-shadow:0 0 22px rgba(212,175,55,.18);margin-bottom:16px;position:relative}
+        .hz-kart h3{font-size:1.12rem;font-weight:800;margin-bottom:8px;position:relative;color:#fff}
+        .hz-kart p{font-size:.93rem;line-height:1.55;color:#b9c2d0;margin-bottom:16px;position:relative}
+        .hz-kart em{font-style:normal;font-weight:800;font-size:.88rem;color:var(--altin-acik);letter-spacing:.04em;position:relative}
+        .js .hz-kart{opacity:0;transform:translateY(22px)}
+        .js .gor .hz-kart{opacity:1;transform:none;transition:opacity .7s ease calc(var(--i)*70ms),transform .7s cubic-bezier(.2,.8,.2,1) calc(var(--i)*70ms),border-color .35s,box-shadow .35s}
+        .js .gor .hz-kart:hover{transform:translateY(-6px);transition-delay:0s}
+        .hz-alt{text-align:center;margin-top:26px}
+        @media (max-width:520px){.hz-izgara{grid-template-columns:1fr 1fr;gap:10px}.hz-kart{padding:20px 14px 16px;border-radius:18px}.hz-ikon{width:46px;height:46px;font-size:1.4rem;margin-bottom:12px}.hz-kart h3{font-size:.98rem}.hz-kart p{font-size:.82rem}.hz-no{font-size:2rem;right:12px}}
+        @media (prefers-reduced-motion:reduce){.js .hz-kart{opacity:1;transform:none}}
+        </style>
+        <div class="cam">
+            <h2 class="baslik-b">Hizmetlerimiz</h2>
+            <p class="hz-baslik-alt">Kaba işten son dokunuşa, her aşama tek elden. İnce işçilik, anahtar teslim.</p>
+            <div class="hz-izgara">
+                <a class="hz-kart" style="--i:0" href="https://wa.me/905332506002?text=Merhaba%2C%20S%C4%B1va%20ve%20al%C3%A7%C4%B1%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">01</span><span class="hz-ikon">🧱</span><h3>Sıva & Alçı</h3><p>Düz, pürüzsüz yüzeyler. Boyaya hazır, temiz duvarlar.</p><em>Bilgi al →</em></a>
+                <a class="hz-kart" style="--i:1" href="https://wa.me/905332506002?text=Merhaba%2C%20Al%C3%A7%C4%B1pan%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">02</span><span class="hz-ikon">🏛️</span><h3>Alçıpan</h3><p>Bölme duvar, kolon ve nişler. Ölçüye göre, temiz uygulama.</p><em>Bilgi al →</em></a>
+                <a class="hz-kart" style="--i:2" href="https://wa.me/905332506002?text=Merhaba%2C%20Asma%20tavan%20ve%20LED%20ayd%C4%B1nlatma%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">03</span><span class="hz-ikon">💡</span><h3>Asma Tavan & LED</h3><p>Gizli LED'li, modern ışık kovanlı tavanlar.</p><em>Bilgi al →</em></a>
+                <a class="hz-kart" style="--i:3" href="https://wa.me/905332506002?text=Merhaba%2C%20Boya%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">04</span><span class="hz-ikon">🎨</span><h3>Boya</h3><p>İç cephe boya, saten ve dekoratif boya uygulamaları.</p><em>Bilgi al →</em></a>
+                <a class="hz-kart" style="--i:4" href="https://wa.me/905332506002?text=Merhaba%2C%20Fayans%20ve%20seramik%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">05</span><span class="hz-ikon">🔲</span><h3>Fayans & Seramik</h3><p>Zemin ve duvar. Düzgün derz, hassas ölçü.</p><em>Bilgi al →</em></a>
+                <a class="hz-kart" style="--i:5" href="https://wa.me/905332506002?text=Merhaba%2C%20Parke%20ve%20laminat%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">06</span><span class="hz-ikon">🪵</span><h3>Parke & Laminat</h3><p>Sessiz, sağlam zemin. Süpürgelikle birlikte teslim.</p><em>Bilgi al →</em></a>
+                <a class="hz-kart" style="--i:6" href="https://wa.me/905332506002?text=Merhaba%2C%20Kap%C4%B1%2C%20pencere%20ve%20do%C4%9Frama%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">07</span><span class="hz-ikon">🚪</span><h3>Kapı, Pencere & Doğrama</h3><p>Montaj ve ayar. Kapanışı tam, görünümü temiz.</p><em>Bilgi al →</em></a>
+                <a class="hz-kart" style="--i:7" href="https://wa.me/905332506002?text=Merhaba%2C%20Mutfak%20ve%20banyo%20montaj%C4%B1%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">08</span><span class="hz-ikon">🚿</span><h3>Mutfak & Banyo Montajı</h3><p>Dolap, eviye, lavabo ve armatür montajı.</p><em>Bilgi al →</em></a>
+                <a class="hz-kart" style="--i:8" href="https://wa.me/905332506002?text=Merhaba%2C%20Modern%20TV%20%C3%BCnitesi%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">09</span><span class="hz-ikon">📺</span><h3>Modern TV Ünitesi</h3><p>Duvara özel tasarım, arkası LED'li ünite.</p><em>Bilgi al →</em></a>
+                <a class="hz-kart" style="--i:9" href="https://wa.me/905332506002?text=Merhaba%2C%20Polyester%20ve%20ah%C5%9Fap%20%C3%A7%C4%B1ta%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><span class="hz-no">10</span><span class="hz-ikon">🖼️</span><h3>Polyester & Ahşap Çıta</h3><p>Duvar çerçeve, lambri ve dekoratif çıta panel.</p><em>Bilgi al →</em></a>
+            </div>
+            <div class="hz-alt"><a class="btn altin" href="#teklif">Teklif Al</a></div>
+        </div>
+    </section>
 
     <section class="bolum gizli" id="medya">
         <div class="cam">
