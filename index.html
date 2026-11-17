@@ -564,6 +564,40 @@ html{scroll-behavior:smooth}
         </div>
     </section>
 
+
+    <section class="bolum gizli" id="vitrin">
+        <style>
+        .vt-izgara{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+        .vt-kart{position:relative;display:block;aspect-ratio:4/5;border-radius:22px;overflow:hidden;border:1px solid rgba(212,175,55,.25);background:#0c0d11;box-shadow:0 14px 34px rgba(0,0,0,.45);text-decoration:none;transition:transform .4s cubic-bezier(.2,.8,.2,1),border-color .4s,box-shadow .4s}
+        .vt-kart:first-child{grid-column:span 2;aspect-ratio:auto;grid-row:span 1}
+        .vt-kart img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+        .vt-kart:hover{border-color:var(--altin);box-shadow:0 18px 44px rgba(212,175,55,.25)}
+        .vt-kart:hover img{transform:scale(1.07)}
+        .vt-kart::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 52%,rgba(0,0,0,.88))}
+        .vt-et{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:18px 18px 16px;display:flex;flex-direction:column;gap:3px}
+        .vt-et small{color:var(--altin-acik);font-weight:800;letter-spacing:.14em;font-size:.7rem;text-transform:uppercase}
+        .vt-et strong{color:#fff;font-size:1.02rem;text-shadow:0 2px 12px rgba(0,0,0,.9)}
+        .js .vt-kart{opacity:0;transform:translateY(22px)}
+        .js .gor .vt-kart{opacity:1;transform:none;transition:opacity .8s ease calc(var(--i)*90ms),transform .8s cubic-bezier(.2,.8,.2,1) calc(var(--i)*90ms),border-color .4s,box-shadow .4s}
+        .vt-alt{text-align:center;margin-top:24px}
+        @media (max-width:700px){.vt-izgara{grid-template-columns:1fr 1fr;gap:10px}.vt-kart{border-radius:16px}.vt-kart:first-child{grid-column:span 2;aspect-ratio:4/3}.vt-et{padding:12px 12px 11px}.vt-et strong{font-size:.88rem}.vt-et small{font-size:.62rem}}
+        @media (min-width:701px){.vt-kart:first-child{aspect-ratio:auto}}
+        @media (prefers-reduced-motion:reduce){.js .vt-kart{opacity:1;transform:none}}
+        </style>
+        <div class="cam">
+            <h2 class="baslik-b">Öne Çıkan İşler</h2>
+            <p class="alt-yazi">Kendi ellerimizle yaptığımız işlerden bir seçki.</p>
+            <div class="vt-izgara">
+                <a class="vt-kart" style="--i:0" href="fotograflar.html"><img src="medya/asma-tavan/led-isikli-asma-tavan-polyester-cita-duvar.jpg" alt="LED'li tavan, çerçeveli duvar" loading="lazy" style="object-position:50% 40%"><span class="vt-et"><small>Asma Tavan &amp; Polyester Çıta</small><strong>LED'li tavan, çerçeveli duvar</strong></span></a>
+                <a class="vt-kart" style="--i:1" href="fotograflar.html"><img src="medya/tv-arkasi/ahsap-citali-led-isikli-tv-unitesi.jpg" alt="Ahşap çıtalı, LED'li ünite" loading="lazy" style="object-position:50% 50%"><span class="vt-et"><small>TV Ünitesi</small><strong>Ahşap çıtalı, LED'li ünite</strong></span></a>
+                <a class="vt-kart" style="--i:2" href="fotograflar.html"><img src="medya/asma-tavan/kare-tasarimli-led-asma-tavan-yuvarlak-tv-nisi.jpg" alt="Kare tasarımlı LED tavan" loading="lazy" style="object-position:50% 40%"><span class="vt-et"><small>Asma Tavan</small><strong>Kare tasarımlı LED tavan</strong></span></a>
+                <a class="vt-kart" style="--i:3" href="fotograflar.html"><img src="medya/polyester-cita/lacivert-polyester-cita-rozet-duvar-panel.jpg" alt="Lacivert rozetli duvar panel" loading="lazy" style="object-position:50% 50%"><span class="vt-et"><small>Polyester Çıta</small><strong>Lacivert rozetli duvar panel</strong></span></a>
+                <a class="vt-kart" style="--i:4" href="fotograflar.html"><img src="medya/polyester-cita/tablolu-polyester-cita-duvar.jpg" alt="Tablolu çerçeveli duvar" loading="lazy" style="object-position:50% 50%"><span class="vt-et"><small>Polyester Çıta</small><strong>Tablolu çerçeveli duvar</strong></span></a>
+            </div>
+            <div class="vt-alt"><a class="btn altin" href="fotograflar.html">Tüm Fotoğraflar</a></div>
+        </div>
+    </section>
+
     <section class="bolum gizli" id="medya">
         <div class="cam">
             <h2 class="baslik-b">Çalışmalarımız</h2>
