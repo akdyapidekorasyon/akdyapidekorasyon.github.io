@@ -49,6 +49,7 @@ footer{margin-top:44px;padding:26px 18px;text-align:center;color:#94a3b8;font-si
 @media(max-width:560px){.ust nav a:not(.ara){display:none}.foto img{height:260px}}</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MR0WM1WR3Y"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MR0WM1WR3Y');</script>
+<script>document.addEventListener('click',function(e){try{var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'',n=null;if(h.indexOf('tel:')===0)n='telefon_tiklama';else if(h.indexOf('wa.me')>-1||h.indexOf('whatsapp')>-1)n='whatsapp_tiklama';else if(h.indexOf('maps.app.goo.gl')>-1||h.indexOf('google.com/maps')>-1)n='harita_tiklama';else if(h.indexOf('instagram.com')>-1)n='instagram_tiklama';if(n&&window.gtag)gtag('event',n,{sayfa:location.pathname});}catch(x){}},true);</script>
 </head>
 <body>
 <div class="ust"><a class="marka" href="index.html">AKD YAPI</a><nav><a href="index.html#hizmetler">Hizmetler</a><a href="fotograflar.html">Fotoğraflar</a><a href="videolar.html">Videolar</a><a class="ara" href="tel:+905332506002">Ara</a></nav></div>
