@@ -1,14 +1,44 @@
 <!doctype html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>Paylaşım Videoları</title>
-<style>body{margin:0;padding:16px;background:#111;color:#fff;font-family:system-ui,sans-serif}h1{font-size:20px;color:#d6aa46}
-.k{background:#1c1c1c;border-radius:14px;padding:12px;margin:0 0 18px}video{width:100%;border-radius:10px;background:#000}
-a.b{display:block;margin-top:10px;text-align:center;background:#d6aa46;color:#000;font-weight:700;padding:12px;border-radius:10px;text-decoration:none}</style></head><body>
-<h1>Instagram Videoları</h1>
-<div class="k"><b>5. Hizmetlerimiz (yeni)</b><video src="05_hizmetlerimiz.mp4" controls muted playsinline></video><a class="b" href="05_hizmetlerimiz.mp4" download>İndir</a></div>
-<div class="k"><b>6. Asma Tavan Modelleri (yeni)</b><video src="06_asma_tavan_modelleri.mp4" controls muted playsinline></video><a class="b" href="06_asma_tavan_modelleri.mp4" download>İndir</a></div>
+<meta name="robots" content="noindex,nofollow"><title>İndirme Merkezi</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:16px;background:#111;color:#fff;font-family:system-ui,-apple-system,sans-serif}
+h1{font-size:22px;color:#d6aa46;margin:4px 0 6px}h2{font-size:17px;color:#d6aa46;margin:26px 0 10px;border-bottom:1px solid #333;padding-bottom:6px}
+p.n{color:#bbb;font-size:14px;line-height:1.5;margin:0 0 8px}
+.k{background:#1c1c1c;border-radius:14px;padding:12px;margin:0 0 16px}.k b{display:block;margin-bottom:8px;font-size:15px}
+video{width:100%;border-radius:10px;background:#000}
+a.b{display:block;margin-top:10px;text-align:center;background:#d6aa46;color:#000;font-weight:700;padding:13px;border-radius:10px;text-decoration:none;font-size:16px}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:10px}.g .k{margin:0;padding:8px}.g img,.g video{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:8px}
+.g a.b{padding:10px;font-size:14px}.ad{font-size:11px;color:#999;margin-top:6px;word-break:break-all}
+</style></head><body>
+<h1>İndirme Merkezi</h1>
+<p class="n">Her videonun ya da fotoğrafın altındaki <b>İndir</b> düğmesine bas. Açılan pencerede <b>İndir</b>'e bas. Sonra Dosyalar → İndirilenler'de dosyaya uzun bas → <b>Paylaş</b> → <b>Videoyu Kaydet</b> / <b>Görüntüyü Kaydet</b> de, Fotoğraflar'a gelir.</p>
+
+<h2>Yeni Instagram Videoları</h2>
 <div class="k"><b>1. Renkli LED Işıklı Tavan</b><video src="04_renkli_led_derleme.mp4" controls muted playsinline></video><a class="b" href="04_renkli_led_derleme.mp4" download>İndir</a></div>
 <div class="k"><b>2. Kırmızı LED Asma Tavan</b><video src="01_kirmizi_led_tavan.mp4" controls muted playsinline></video><a class="b" href="01_kirmizi_led_tavan.mp4" download>İndir</a></div>
 <div class="k"><b>3. Nişli TV Duvarı LED</b><video src="02_nisli_tv_duvari_led.mp4" controls muted playsinline></video><a class="b" href="02_nisli_tv_duvari_led.mp4" download>İndir</a></div>
 <div class="k"><b>4. Mor &amp; Yeşil LED Tavan</b><video src="03_mor_yesil_led_tavan.mp4" controls muted playsinline></video><a class="b" href="03_mor_yesil_led_tavan.mp4" download>İndir</a></div>
+<div class="k"><b>5. Hizmetlerimiz</b><video src="05_hizmetlerimiz.mp4" controls muted playsinline></video><a class="b" href="05_hizmetlerimiz.mp4" download>İndir</a></div>
+<div class="k"><b>6. Asma Tavan Modelleri</b><video src="06_asma_tavan_modelleri.mp4" controls muted playsinline></video><a class="b" href="06_asma_tavan_modelleri.mp4" download>İndir</a></div>
+
+<div id="tum"><p class="n">Sitedeki tüm fotoğraf ve videolar yükleniyor…</p></div>
+<script>
+(function(){
+var KL='akdyapidekorasyon',DP='akdyapidekorasyon.github.io',kok=document.getElementById('tum');
+function ad(s){return s.replace(/-/g,' ').replace(/^./,function(c){return c.toLocaleUpperCase('tr')})}
+function dene(i,d){if(i>=d.length)return Promise.reject();return fetch('https://api.github.com/repos/'+KL+'/'+DP+'/git/trees/'+d[i]+'?recursive=1').then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){return j.tree||[]}).catch(function(){return dene(i+1,d)})}
+dene(0,['HEAD','main','master']).then(function(t){
+  var gr={};t.forEach(function(x){var m=/^medya\/([^\/]+)\/(.+\.(jpe?g|png|webp|mp4))$/i.exec(x.path);if(!m)return;(gr[m[1]]=gr[m[1]]||[]).push({p:x.path,v:/mp4$/i.test(x.path)})});
+  kok.innerHTML='';
+  Object.keys(gr).sort().forEach(function(k){
+    var h=document.createElement('h2');h.textContent=ad(k);kok.appendChild(h);
+    var g=document.createElement('div');g.className='g';kok.appendChild(g);
+    gr[k].sort(function(a,b){return b.v-a.v||(a.p<b.p?-1:1)}).forEach(function(f){
+      var u='../'+f.p.split('/').map(encodeURIComponent).join('/'),c=document.createElement('div');c.className='k';
+      c.innerHTML=(f.v?'<video src="'+u+'#t=0.1" muted playsinline preload="metadata" controls></video>':'<img loading="lazy" src="'+u+'" alt="">')+'<a class="b" href="'+u+'" download>İndir</a>';
+      g.appendChild(c)})})
+}).catch(function(){kok.innerHTML='<p class="n">Liste yüklenemedi. Sayfayı yenile.</p>'});
+})();
+</script>
 </body></html>
