@@ -152,6 +152,14 @@
         footer { background: rgba(9,10,15,0.88); color: #64748b; text-align: center; padding: 25px 20px; font-size: .95rem; margin-top: 50px; border-top: 2px solid var(--altin); }
         footer a { color: var(--altin); text-decoration: none; font-weight: 700; }
 
+        /* ===== Yorumlar ===== */
+        .yorum-liste { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; max-width: 900px; margin: 0 auto; }
+        .yorum { background: rgba(22,25,32,0.88); border: 1px solid rgba(255,255,255,0.08); border-left: 3px solid var(--altin); border-radius: 14px; padding: 18px; margin: 0; }
+        .yorum p { color: #e2e8f0; margin: 0 0 12px; line-height: 1.6; }
+        .yorum-kim { color: var(--altin-acik); font-size: .9rem; font-weight: 700; }
+        .yorum-link { text-align: center; margin-top: 18px; }
+        .yorum-link a { color: var(--altin-acik); font-weight: 700; }
+
         /* ===== SSS ===== */
         .sss-liste { max-width: 820px; margin: 0 auto; }
         .sss { background: rgba(22,25,32,0.88); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; margin-bottom: 12px; transition: border-color .25s ease; }
@@ -673,6 +681,17 @@ html{scroll-behavior:smooth}
                 <li><b>3</b><div><strong>Uygulama</strong><span>İşi temiz ve zamanında yaparız.</span></div></li>
                 <li><b>4</b><div><strong>Teslim</strong><span>Birlikte kontrol edip anahtarı teslim ederiz.</span></div></li>
             </ol>
+        </div>
+    </section>
+
+    <section class="bolum gizli" id="yorumlar">
+        <div class="cam">
+            <h2 class="baslik-b">Müşterilerimiz Ne Diyor</h2>
+            <div class="yorum-liste">
+                <blockquote class="yorum"><p>“Geçen yıl evimizin dekorasyon ve çıta işlerini yaptırmıştık. Aradan bir yıl geçmesine rağmen en ufak bir deforme veya sorun yaşamadık, ilk günkü gibi sağlam duruyor. Hem işçilikleri çok temiz hem de söz verdikleri zamanda teslim ettiler, kesinlikle tavsiye ederim.”</p><div class="yorum-kim">Müşterimiz · Google yorumu</div></blockquote>
+                <blockquote class="yorum"><p>“Daha geçen hafta evimizi dekorasyona vermiştik ve bu gün sabah teslim aldım. Evi dekorasyona vereli 5 gün oldu ve 5 günde muhteşem işçilik ve muhteşem hızla evimi teslim ettiler. Kahramanmaraş genelinin en iyi dekorasyoncuları, kesinlikle tavsiye ederim.”</p><div class="yorum-kim">Müşterimiz · Google yorumu</div></blockquote>
+            </div>
+            <p class="yorum-link"><a href="https://maps.app.goo.gl/65TvpFUp9rfXaBz97?g_st=ic" target="_blank" rel="noopener">Google'da yorumları gör ve yorum yaz</a></p>
         </div>
     </section>
 
