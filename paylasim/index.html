@@ -5,13 +5,7 @@
 <video src="led_renkleri_1080.mp4" controls playsinline></video>
 <a class="btn indir" href="led_renkleri_1080.mp4" download>Videoyu İndir</a>
 <h2>🎙 Seslendirme metni (sen oku)</h2>
-<div style="background:#15171d;border-radius:12px;padding:12px 14px;font-size:.95rem;line-height:1.7">
-<b style="color:#d4af37">0-3 sn:</b> Aynı salon, ışık rengini değiştiriyoruz. Önce mor.<br>
-<b style="color:#d4af37">3-6 sn:</b> Şimdi mavi.<br>
-<b style="color:#d4af37">6-8,5 sn:</b> Bir de yeşil.<br>
-<b style="color:#d4af37">8,5-11 sn:</b> Bu da boş oda. Önce mavi ışık.<br>
-<b style="color:#d4af37">11-12,5 sn:</b> Şimdi yeşil.<br>
-<b style="color:#d4af37">12,5-16 sn:</b> Sen hangisini seçerdin? Yorumlara yaz, ücretsiz keşif için bize ulaş.</div>
+<div style="background:#15171d;border-radius:12px;padding:12px 14px;font-size:1.15rem;line-height:1.9" id="metin"><div class="sat" data-t="0" style="padding:4px 6px;border-radius:8px"><b style="color:#d4af37">0-3 sn:</b> Aynı salon, ışık rengini değiştiriyoruz. Önce mor.</div><div class="sat" data-t="3" style="padding:4px 6px;border-radius:8px"><b style="color:#d4af37">3-6 sn:</b> Şimdi mavi.</div><div class="sat" data-t="6" style="padding:4px 6px;border-radius:8px"><b style="color:#d4af37">6-8,5 sn:</b> Bir de yeşil.</div><div class="sat" data-t="8.5" style="padding:4px 6px;border-radius:8px"><b style="color:#d4af37">8,5-11 sn:</b> Bu da boş oda. Önce mavi ışık.</div><div class="sat" data-t="11" style="padding:4px 6px;border-radius:8px"><b style="color:#d4af37">11-12,5 sn:</b> Şimdi yeşil.</div><div class="sat" data-t="12.5" style="padding:4px 6px;border-radius:8px"><b style="color:#d4af37">12,5-16 sn:</b> Sen hangisini seçerdin? Yorumlara yaz, ücretsiz keşif için bize ulaş.</div></div>
 <p style="color:#94a3b8;font-size:.85rem;margin-top:8px;line-height:1.4">Video sessiz. Instagram'da videoyu yükle, düzenleme ekranında Seslendirme (mikrofon) seçeneğiyle videoyu izlerken oku.</p>
 <h2>Altına yazılacak metin</h2>
 <textarea id="yazi" readonly>Aynı salon, farklı ışık rengi 💡
@@ -26,4 +20,5 @@ Hoş geldiniz abi, kapımız açık.
 
 #ledtavan #asmatavan #ledaydınlatma #alçıpan #kahramanmaraş #antalya #alanya #dekorasyon</textarea>
 <button class="btn kopya" onclick="var t=document.getElementById('yazi');t.select();t.setSelectionRange(0,99999);try{navigator.clipboard.writeText(t.value)}catch(e){document.execCommand('copy')};this.textContent='Kopyalandı ✓'">Yazıyı Kopyala</button>
+<script>var v=document.querySelector('video');v.addEventListener('timeupdate',function(){var s=document.querySelectorAll('.sat'),a=-1;for(var i=0;i<s.length;i++){if(v.currentTime>=parseFloat(s[i].dataset.t))a=i;s[i].style.background='transparent'}if(a>=0&&!v.paused)s[a].style.background='#3a3320'});</script>
 </body></html>
